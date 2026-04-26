@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-26T14:49:02.801439",
-  "modo": "dry-run",
+  "timestamp": "2026-04-26T15:38:31.707525",
+  "modo": "apply",
   "resumo": {
     "total_debentures": 1000,
     "marcadas_isento": 217,
@@ -95,7 +95,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "935f2ba7-08c8-48fd-a5f4-07525b53a37c",
@@ -110,7 +110,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b2947967-3ae4-42fe-b85f-960c2ed8cac0",
@@ -125,7 +125,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "02809e88-47ba-47a3-afd8-63251b79f8dd",
@@ -140,7 +140,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "7eca5e08-c0c8-4894-85ad-50844b5a4af6",
@@ -155,7 +155,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "60fb09e0-2327-4409-a90f-18761563edf5",
@@ -170,7 +170,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "db0eae79-e81c-4380-b7c0-d649354ebe2b",
@@ -198,7 +198,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f1b01a46-a2f1-431e-9992-700cf77303b5",
@@ -213,7 +213,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "8916afc9-87b2-437f-9244-1f583c0e7253",
@@ -438,7 +438,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ba03037c-3cac-40a7-84d2-4e38c3632628",
@@ -479,7 +479,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0cf9e3cc-644c-46a0-be6e-3c47f0c37fe1",
@@ -494,7 +494,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "bb3c1817-aa7d-49ed-b26a-2b1dd995f8ea",
@@ -509,7 +509,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ab7abab3-1101-4af2-90e5-42931785f635",
@@ -563,7 +563,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "2ecf2042-43ce-4ddf-bc02-55fb87fba58f",
@@ -578,7 +578,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0be767da-fbb9-44d0-9ee0-b2166dec345f",
@@ -632,7 +632,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5f8e64dd-6c50-4a0e-ab77-a849ef14927e",
@@ -647,7 +647,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "949855e9-1047-4b14-a6ef-06da7e4a1b1b",
@@ -707,7 +707,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0eec7150-e1cb-4cfe-bf19-3af46c1145e2",
@@ -722,7 +722,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "70b8d8f2-edb8-4575-b4eb-906aaf81e4f3",
@@ -737,7 +737,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "38413c82-ae2c-4631-b69e-630eb9dad9c5",
@@ -1013,7 +1013,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f37c1bac-acb9-457e-a544-e4cff9361266",
@@ -1028,7 +1028,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9a078007-196d-4ad8-867b-2e2fdea63ba0",
@@ -1043,7 +1043,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "cc3f8d0f-691e-43dd-bffd-90bbd52a4a5b",
@@ -1058,7 +1058,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "72198f24-244e-4e51-881d-6d01c8c98ff6",
@@ -1073,7 +1073,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "766fdd4a-c7ea-42dc-9113-dee48060b1fa",
@@ -1088,7 +1088,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5083fa9f-a479-47b2-825d-c4f1d386ad1e",
@@ -1103,7 +1103,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "c1d8b585-f8af-4a92-8a05-fb363524b07c",
@@ -1183,7 +1183,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "da71e10e-6284-47cf-9959-090fbdfc63aa",
@@ -1198,7 +1198,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ea07f3e7-c8cc-4af3-967e-90241a2fe46a",
@@ -1213,7 +1213,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e92b70b4-48c3-44f1-91c4-01e4d9d1e59b",
@@ -1307,7 +1307,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "fc837b06-253b-4061-899d-87807c716527",
@@ -1415,7 +1415,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "116cd433-a1a9-4fb0-b2bc-2c1fef04f52c",
@@ -1430,7 +1430,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "66d9ba24-05eb-4d97-a2b7-708912adeb0a",
@@ -1445,7 +1445,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "fdec9916-fa38-4684-be5c-d65032745493",
@@ -1460,7 +1460,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "388e66ba-7e8f-41ed-8985-7d1a1c81dc6a",
@@ -1475,7 +1475,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "cff20f2c-2ba6-4395-bf5e-f51580cfcb5f",
@@ -1490,7 +1490,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "bbcc87d1-2611-4076-abe2-8172871f89e9",
@@ -1505,7 +1505,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "8f1b320d-3bb0-4ea0-b9ac-c3b7281a4faa",
@@ -1572,7 +1572,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "c5dbaff3-4ed2-4835-944b-2a1509024e4a",
@@ -1691,7 +1691,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b9106275-780c-4f20-897e-baecb912c205",
@@ -1706,7 +1706,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e2ebd55f-7e41-42a5-b437-7668fabf594a",
@@ -1721,7 +1721,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "145f17fc-e210-41f1-bd83-cea0b1d481cc",
@@ -1943,7 +1943,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "14edf3d8-c1e8-4da4-b6dd-2c7ed3b79da2",
@@ -1958,7 +1958,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d77df934-7138-43fa-99d6-a52353ee217e",
@@ -1973,7 +1973,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4cac70c6-b002-4f00-972c-604988663276",
@@ -1988,7 +1988,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d2c24fc2-fc10-4ae2-93d9-ea4a739c2c2f",
@@ -2003,7 +2003,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "df9c831b-de22-486f-9a40-fa3bf07aac7c",
@@ -2018,7 +2018,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ee77d56f-d0bd-425f-bb63-1e7e7af701b1",
@@ -2033,7 +2033,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4f0fdff4-3410-4ed5-877e-70b19384bcf8",
@@ -2048,7 +2048,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b0353bef-a7ad-42a4-a518-6e35905b1d9f",
@@ -2076,7 +2076,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "2a5406b6-b7e0-40e6-afec-be5826af7f49",
@@ -2169,7 +2169,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "201d25b6-20a4-4094-9e38-3beb7057b732",
@@ -2211,7 +2211,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "183c48ba-d72e-48c8-ae9c-4e62d21dfd74",
@@ -2226,7 +2226,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4324ca89-fdf7-4dfe-add2-fbd369ee775d",
@@ -2241,7 +2241,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "18fead15-8768-4899-905e-ee56bef4c038",
@@ -2256,7 +2256,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f3c8c004-d832-4613-ba26-fa5394ef13ad",
@@ -2271,7 +2271,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "24890e58-0dc7-4351-934b-280bde00a44a",
@@ -2286,7 +2286,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "bda6c932-5bed-4faf-aea1-99fa395f8535",
@@ -2301,7 +2301,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "aabb79d5-61ce-4052-aa61-ee6c0163071c",
@@ -2316,7 +2316,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "c25938a5-4551-4e95-8501-13b82cb644e0",
@@ -2331,7 +2331,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d0703da7-225c-4b7d-a9d7-f08b97caee96",
@@ -2346,7 +2346,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e623159c-9023-4279-b9ac-06523f9fc7c7",
@@ -2361,7 +2361,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d0116418-6f59-4990-ac69-d617ed635038",
@@ -2376,7 +2376,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a6d0ce73-404d-4bd4-999d-4cc138e00242",
@@ -2391,7 +2391,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "92430d60-5c16-4d86-b7d9-d04e2bbd24f5",
@@ -2584,7 +2584,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "72015555-d442-474a-9e1b-a87ee6caabfb",
@@ -2599,7 +2599,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e0b2a041-e7ef-4d06-be42-85a569d80034",
@@ -2614,7 +2614,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f36fd69a-d127-49c5-afd8-8b34de432162",
@@ -2629,7 +2629,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "6293727b-db91-4d9e-a869-f0d4a086f61e",
@@ -2644,7 +2644,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "93698bf8-b318-4a81-9aab-f9fac07d21b2",
@@ -2659,7 +2659,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "57cbcbc3-b99b-4603-82c7-d3223ba7298f",
@@ -2722,7 +2722,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9b3db966-3b66-4368-9d64-664fb1ca9dcd",
@@ -2737,7 +2737,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "767887a3-a0ee-4406-9e90-325344bb33b1",
@@ -2765,7 +2765,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "61a478d1-a506-4253-aa8c-79f1de44f577",
@@ -2780,7 +2780,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e5c68d80-2ac5-47bf-8fdb-fb6b92471256",
@@ -2795,7 +2795,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "75f877c8-ce49-4ae2-82a3-174373ba45f0",
@@ -2810,7 +2810,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "173141ed-dc3f-4970-9f73-de84d9117b0f",
@@ -2825,7 +2825,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "81bcf31e-4021-48b2-bafa-0e5c3a06b923",
@@ -2840,7 +2840,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f3110a87-ec06-47d7-9e82-31f7e6195505",
@@ -2855,7 +2855,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "242bae99-e529-4098-98cd-e5abc223355e",
@@ -2870,7 +2870,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "36d5dd36-768e-4108-a8b4-a5cfa8f139ff",
@@ -2885,7 +2885,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e316e399-2c66-44a6-939a-26be7b4104a7",
@@ -2900,7 +2900,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "08a70375-3c69-4135-ac12-1d3767aa575f",
@@ -2915,7 +2915,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "6d68cd31-7713-4ea2-99d5-06631523d0a6",
@@ -2930,7 +2930,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5800fbfc-f714-443c-b49f-91309f625e4c",
@@ -2976,7 +2976,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f573c2db-6ab8-4bb4-8b6f-1cc5867f00f4",
@@ -2991,7 +2991,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "67b86ca5-1128-4d97-b861-91297d50362a",
@@ -3006,7 +3006,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "00beaba9-ddf3-4681-a95f-5eee336aac6c",
@@ -3021,7 +3021,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "faed9899-a32a-4cb4-b5eb-1eec77bdacf1",
@@ -3036,7 +3036,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "12ebb39d-aaa0-42c6-a9a4-0ca480eabfeb",
@@ -3051,7 +3051,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ae497014-d6ac-4102-831b-dc35da3e66b3",
@@ -3066,7 +3066,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a2b9728c-631f-4d04-aca3-cb9c88039439",
@@ -3081,7 +3081,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "735f73d5-9594-4d51-bbfc-73ece33c4aec",
@@ -3096,7 +3096,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5822ccd7-f5c7-473e-89b0-5d9d6b256f7c",
@@ -3111,7 +3111,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9b18b04d-a951-4e95-b0e7-420e8defab3c",
@@ -3126,7 +3126,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "cc534ec4-cb54-4adc-a26f-dccf4bf1092f",
@@ -3141,7 +3141,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "59952884-67e1-43a8-ae66-e011a8b5931f",
@@ -3156,7 +3156,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5b646b8a-ffb9-4127-9376-93e464828f57",
@@ -3171,7 +3171,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3c27190e-84c3-4f12-9e81-1a07c0e18e5d",
@@ -3186,7 +3186,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4f15ebff-3341-4f2b-979e-e5a1b56db9d8",
@@ -3201,7 +3201,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4d5dab94-4b2e-4a9d-9365-0266c893d74f",
@@ -3216,7 +3216,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "354dcbdc-110c-42f4-9299-8f82a4ebcb87",
@@ -3231,7 +3231,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f48f0861-f799-4b40-a502-256a6b266706",
@@ -3246,7 +3246,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9c062558-2c59-4987-9f82-674a498e4d0b",
@@ -3261,7 +3261,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d4b54178-b642-465b-b859-a63ad0cdb9d9",
@@ -3276,7 +3276,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9709acdf-8409-4190-a6b9-9a0e421d30aa",
@@ -3291,7 +3291,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "046900f5-c942-42b0-a059-016ba71d6594",
@@ -3306,7 +3306,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b2db75b1-30a8-48f1-9bd7-3ec97474208f",
@@ -3321,7 +3321,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "28c28002-7e68-4dbe-802b-687cfc95b3f6",
@@ -3336,7 +3336,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ad11599b-d3f8-492c-8556-cae8f1ca96e7",
@@ -3351,7 +3351,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "acb80bcc-6032-4745-911a-eb00f849fe94",
@@ -3366,7 +3366,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d3c0dfcc-6efe-4bf2-a92b-a27887897bc0",
@@ -3420,7 +3420,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "dd805e58-b08d-4a0b-a4a9-7cbaf1f6a822",
@@ -3487,7 +3487,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "59249829-809a-46f1-b8a5-c87bdb557ab6",
@@ -3502,7 +3502,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "2e2766ca-ca56-409f-8aea-641093e03972",
@@ -3517,7 +3517,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0f827472-6755-4c50-9ace-29820322e573",
@@ -3532,7 +3532,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "fec4048b-a667-4f5e-9acd-9b56dad7d85a",
@@ -3547,7 +3547,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "296c0d37-d3ed-4bd3-9b23-c0e42823c1e8",
@@ -3562,7 +3562,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e12936cd-892d-440a-bd58-889b6a79aaad",
@@ -3616,7 +3616,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "66400358-2dd1-44c3-a15f-0df67f764c49",
@@ -3631,7 +3631,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b3e19ec0-c65f-424f-b491-d88033b55de2",
@@ -3919,7 +3919,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e52d89fd-a5c4-4551-ad35-1680eb0ef173",
@@ -3934,7 +3934,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "694a6b17-3ee2-400d-b725-34b1f7c9267c",
@@ -3949,7 +3949,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "6a731105-f893-4136-9107-5bc39b5cab64",
@@ -4068,7 +4068,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "66f55d8b-01c7-4d47-8325-ce3bac855b49",
@@ -4624,7 +4624,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "75abd01a-2045-4ad4-a421-bce190b6c746",
@@ -4713,7 +4713,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "81996004-4b44-4ff7-ab9d-df46907c87f6",
@@ -4901,7 +4901,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4cb1e861-3df0-4b64-a782-7140f9fdd8b9",
@@ -4916,7 +4916,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "452ff3c6-8b03-4644-a6e4-8648027f9b45",
@@ -4931,7 +4931,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4bd634f0-a5f9-4c7d-9be5-316b968a1b5d",
@@ -5024,7 +5024,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ad0ac79a-7e04-48a9-b744-6ed02ee27641",
@@ -5039,7 +5039,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "07159289-301e-4de9-8bb1-98ebd99ad893",
@@ -5745,7 +5745,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3358db52-efb7-4dda-8788-e2889684eb45",
@@ -5856,7 +5856,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "1e94c196-abca-4dd2-b4d7-bad84fe6ec47",
@@ -5871,7 +5871,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "dbbabf30-5974-4225-b9dd-3f868a607d78",
@@ -5886,7 +5886,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "73814487-1867-4d88-bc27-dc8515bcfc08",
@@ -5901,7 +5901,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "08ffbd62-76b4-4df1-ab16-62f0361d1c7a",
@@ -5916,7 +5916,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d6ded28a-573f-4e68-bd4b-dbc73de91b22",
@@ -5944,7 +5944,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "c9d712e3-a2da-4893-8362-841dc0a0c19d",
@@ -5959,7 +5959,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5518f2e1-9582-47a4-96c0-ff059087d16f",
@@ -5974,7 +5974,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3773d230-ad61-4910-b254-e5968755a9af",
@@ -5989,7 +5989,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3693dba4-bb2f-4128-a969-eece01c1d80b",
@@ -6004,7 +6004,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3d1c25d0-20a5-4077-855a-e20cb8a4609c",
@@ -6019,7 +6019,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b8dee825-49de-44d1-9f53-6c51240a1b8c",
@@ -6034,7 +6034,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "04eaad7b-0457-4752-a914-6e003bfd4233",
@@ -6049,7 +6049,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b05192a7-5f4c-415d-9262-e8704ca81591",
@@ -6064,7 +6064,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "6301e182-539f-400d-97fd-d646bfad09f4",
@@ -6079,7 +6079,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "8106dc1d-19b2-4171-816b-60d8c5c0d6f5",
@@ -6381,7 +6381,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "8df1daab-5bb4-4f81-968f-c19d41e0629c",
@@ -6396,7 +6396,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "4a315a1f-3518-4bff-93c4-693568fc659e",
@@ -6586,7 +6586,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "7da57d84-3b1c-4876-b1ee-32c7e2595aae",
@@ -7463,7 +7463,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "cfb9ec55-a2f4-4fc0-a8ba-11aef23bfde4",
@@ -7526,7 +7526,7 @@
       "motivo": "emissor tem incentivada DI na CVM + debenture é CDI",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0512f27e-7cb1-48df-a8c1-427de098d166",
@@ -7724,7 +7724,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a52157bc-923e-42c5-8af3-8202e0b942c9",
@@ -7739,7 +7739,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "7b32ad14-6123-4db6-8fb0-b45d8c2cbb62",
@@ -7767,7 +7767,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5365ac49-66a2-40f4-a148-d9cd9890d616",
@@ -7860,7 +7860,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "aa835a8e-c011-4d15-8d9a-25939a5f69df",
@@ -7923,7 +7923,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d6c574d6-e660-4070-b073-ae52029fd7d2",
@@ -7938,7 +7938,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a9970fe1-f478-4c41-ab49-3540f319705d",
@@ -7953,7 +7953,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d80cd848-9ce4-43a4-83dd-ffb75d29ffd3",
@@ -8301,7 +8301,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "324083e1-e04d-47cc-ab8b-d151055c68c2",
@@ -8343,7 +8343,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b1b58897-10a7-4ee5-be53-12402d23cc81",
@@ -8358,7 +8358,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5ae3f67e-bca5-4c30-9197-16d74dd79e23",
@@ -8373,7 +8373,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "943f532a-8b9a-47e5-b1ad-95d7615bebb3",
@@ -8388,7 +8388,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "94810998-1e31-4ccf-a7a7-06ce8b7239de",
@@ -8808,7 +8808,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f9931a56-1d2e-4187-adcd-f21cc0b02512",
@@ -8862,7 +8862,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "29d1ebb3-f91a-4a59-87f7-df6ef44c3861",
@@ -8877,7 +8877,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "d8cf8aa9-0f52-40c5-9493-80f3fadc4835",
@@ -8892,7 +8892,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0044aa31-a9b7-4da8-84c4-225bd7ce099c",
@@ -8907,7 +8907,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "bf933c63-0de6-43f0-81c5-0ca8d9dbaf46",
@@ -8922,7 +8922,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "787c41ee-f169-4ba3-bde7-aaebba8a17ce",
@@ -9697,7 +9697,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "acf87e42-7d75-45e1-ad1a-e3b4e147bd0a",
@@ -10256,7 +10256,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "124f33c5-939d-4e8e-b562-7ca72d78bc1d",
@@ -10399,7 +10399,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ecdfa316-435c-40c6-b976-54f339176f40",
@@ -10414,7 +10414,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "16c0f9e8-e8bd-428a-9b4c-fc57c9a48599",
@@ -10429,7 +10429,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "24cc6dda-e584-4223-8efc-4eeed4666b44",
@@ -10444,7 +10444,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "34aec897-3d8e-4684-a5e7-4905112f8bfe",
@@ -10459,7 +10459,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3901e03a-42fa-4a9f-a0d9-5e0d09d9cd29",
@@ -10474,7 +10474,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "992c1d5c-856d-4dc8-bcdd-0d20dd5d0714",
@@ -10489,7 +10489,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "592488c7-7c53-454b-b8a3-9be3ee4ba1a7",
@@ -10504,7 +10504,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "477d7899-b78c-48e4-b80a-2d6f15948e80",
@@ -10519,7 +10519,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "abeb365a-7577-41e7-855a-b6200efc65de",
@@ -10534,7 +10534,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "cdbdbe5d-68f3-4947-bb4b-5aefb751b769",
@@ -10549,7 +10549,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "173baa14-a935-4818-9beb-b6eb384c4046",
@@ -10947,7 +10947,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3aaf1716-a872-4cf0-846b-ea8c8d27432a",
@@ -10962,7 +10962,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b2d0193b-2492-403f-b5a2-96d0e65e446d",
@@ -10977,7 +10977,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "eee43149-34e2-405b-b462-89a7d64df0c5",
@@ -10992,7 +10992,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "984ec893-fd43-4ae0-92dc-1bad3b25ee66",
@@ -11007,7 +11007,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "58b8425c-5e62-49f3-8eb6-03730afeab88",
@@ -11022,7 +11022,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "8f98e805-03ac-495d-b793-0497642a09d0",
@@ -11037,7 +11037,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "7becda8a-a9c1-4445-9bd1-72af585cb092",
@@ -11052,7 +11052,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b4780649-ab85-439c-9689-9ba10a76f32c",
@@ -11067,7 +11067,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "1d8e71cf-5632-4574-b167-165c628c4250",
@@ -11082,7 +11082,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "b268e60f-3e48-4d4c-aa59-3611dd59cb70",
@@ -11097,7 +11097,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "02dfb891-0a94-4486-8c0b-26ac01b9b31d",
@@ -11112,7 +11112,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "19cbf46b-2205-4513-83d1-108d03c3f792",
@@ -11127,7 +11127,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "82d29df5-2053-4d9f-927f-247cc2488250",
@@ -11142,7 +11142,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ad4ca149-d95a-4284-80b2-83836c69d16d",
@@ -11157,7 +11157,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "ac5cf4c9-fdd0-400c-8c63-52aca4fea7a4",
@@ -11172,7 +11172,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "16e7a3c9-68b8-418d-a1cc-70ec15e6c95b",
@@ -11187,7 +11187,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "0ce2de87-b5fa-4cb5-a8e5-2b7a4ab5fdf4",
@@ -11202,7 +11202,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f66b8037-3df3-4624-8873-62af658c11e1",
@@ -11217,7 +11217,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a83bd780-209b-45fb-85c3-fd24c41cbfb5",
@@ -11232,7 +11232,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5813c332-1b5b-4484-8f38-c723704910ab",
@@ -11247,7 +11247,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f49a545b-cc13-4571-adf9-90e3d763b280",
@@ -11262,7 +11262,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "a5446f89-8e6c-4c1b-94c4-2f5b44397014",
@@ -11277,7 +11277,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "29f5e925-4d0e-418b-82fb-186d8f7fb2ac",
@@ -11292,7 +11292,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "f904b13d-d34c-47cc-b1ac-31f8c39e4fd2",
@@ -11307,7 +11307,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "09db79ea-e76e-4053-b1b0-bf3de3cb4cc6",
@@ -11972,7 +11972,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "68b57394-21a7-4a1e-b284-440f56684d73",
@@ -12195,7 +12195,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9170c81c-37e2-4a47-b82d-ea3ebc727e7a",
@@ -12210,7 +12210,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "5f2f247c-6c14-498a-9552-89780863f421",
@@ -12474,7 +12474,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "e3ecdc74-97ba-45ce-b9ac-b0f6dd18c2df",
@@ -12489,7 +12489,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "3ee101c6-8f4d-4f19-9877-2b4ea4f7294b",
@@ -12504,7 +12504,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "85307eb0-3628-44ca-8621-71475ca4e05a",
@@ -12519,7 +12519,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "9bf8d20b-0dc8-47e2-8959-41658c1272be",
@@ -12534,7 +12534,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "edbe18c2-2adb-4439-bf46-1a7cac7401fb",
@@ -12549,7 +12549,7 @@
       "motivo": "emissor tem incentivada IPCA na CVM + debenture é IPCA",
       "acao": "alterar_para_isento",
       "tributacao_nova": "Isento",
-      "resultado": "dry-run"
+      "resultado": "sucesso"
     },
     {
       "emissao_id": "c218d264-633a-42ab-93a1-35ffe213835c",

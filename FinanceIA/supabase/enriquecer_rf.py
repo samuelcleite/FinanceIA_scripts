@@ -45,6 +45,46 @@ RELATORIO_INCENTIVADAS = "relatorio_incentivadas.json"
 
 DRY_RUN = "--apply" not in sys.argv
 
+# --- LISTAS DE EXCLUSAO ---------------------------------------------------
+# Preencha apos revisar os relatorios JSON do dry-run.
+
+# Emissores com match incorreto com a CVM -- NAO receberao CNPJ.
+# Copie o campo "emissor_id" do relatorio_cruzamento_emissores.json.
+EXCLUIR_CNPJ_EMISSORES = [
+    "7351bb13-958e-4714-b611-1e5aa012bac1",
+    "84dc8c84-bbdb-40e4-aad6-2841c7199293",
+    "ce92f784-eec8-43ef-857d-490e2ce02228",
+    "160387b3-6d8e-467a-bb46-7001a31c69d9",
+    "94fba427-92aa-4b06-a60e-57c1a75cb709",
+    "4e226df6-7b56-45ef-9bd1-021303233e55",
+    "3e6f2467-ce92-41e0-a10c-459657edc6a6",
+    "0458400c-1b6e-47a7-8119-ae9a72ab66e4",
+    "a4e9dd42-090f-4ce3-8016-95c6abf0ab83",
+    "91c6efc4-3fbb-4154-99b7-925c14facd89",
+    "8d80e75d-c9e6-4cdd-a135-cf78ba93ad69",
+    "734b902d-89a1-40e6-a9c3-4936c2c5e52a",
+    "dfc097b2-5e1b-4beb-9584-34bc6dd41d6a",
+    "dfc097b2-5e1b-4beb-9584-34bc6dd41d6a",
+    "54e4f16c-208c-4bbf-81fd-e94ef74be07f",
+    "adbc2505-9452-4330-a2ee-b3ea6914184d",
+    "cb5930cc-5199-4df9-b342-51ebac959c0f",
+    "e3e04904-6429-4eab-b724-d231b31cdb8e",
+    "cf42f074-1374-40a6-9177-588b04efa602",
+    "a06e3183-1086-492e-bc79-fc72f6d96914",
+
+
+    # "id-do-emissor-errado-1",
+    # "id-do-emissor-errado-2",
+]
+
+# Debentures classificadas como incentivadas incorretamente.
+# Serao mantidas como "Longo Prazo" mesmo que a heuristica diga Isento.
+# Copie o campo "emissao_id" do relatorio_incentivadas.json.
+FORCADO_LONGO_PRAZO = [
+    # "id-da-emissao-errada-1",
+    # "id-da-emissao-errada-2",
+]
+# --------------------------------------------------------------------------
 
 # ─── FUNÇÕES AUXILIARES ──────────────────────────────────────────────────────
 
@@ -190,6 +230,12 @@ def main():
             "cnpj_atual": emissor.get("cnpj"),
         }
 
+        if emissor["id"] in EXCLUIR_CNPJ_EMISSORES:
+            entry["acao"] = "excluido_manualmente"
+            entry["resultado"] = "ignorado por EXCLUIR_CNPJ_EMISSORES"
+            log_emissores.append(entry)
+            continue
+
         if cvm_data:
             entry["nome_cvm"] = cvm_data["nome_original_cvm"]
             entry["cnpj_cvm"] = cvm_data["cnpj"]
@@ -292,6 +338,10 @@ def main():
 
             entry["classificada_incentivada"] = is_incentivada
             entry["motivo"] = motivo
+
+            if emissao["id"] in FORCADO_LONGO_PRAZO:
+                is_incentivada = False
+                entry["motivo"] = "forcado Longo Prazo manualmente (FORCADO_LONGO_PRAZO)"
 
             if is_incentivada and emissao.get("tributacao") != "Isento":
                 entry["acao"] = "alterar_para_isento"

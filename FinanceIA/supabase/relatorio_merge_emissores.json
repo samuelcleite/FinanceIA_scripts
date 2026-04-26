@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-04-26T18:07:25.350505",
+  "modo": "apply",
+  "merges_processados": 8,
+  "erros": 0,
+  "detalhes": [
+    {
+      "id_manter": "77b450ec-39b1-47b6-8b74-33b32dccba0e",
+      "nome_manter": "ATHON GERACAO DISTRIBUIDA II S.A.",
+      "id_remover": "b08a1066-630e-4730-8a57-e46fc26b8f16",
+      "nome_remover": "ATHON GERACAO DISTRIBUIDA S/A",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "77b450ec-39b1-47b6-8b74-33b32dccba0e",
+      "nome_manter": "ATHON GERACAO DISTRIBUIDA II S.A.",
+      "id_remover": "c4d5fa53-5fb6-40c7-8f55-0dc041b4c591",
+      "nome_remover": "ATHON GERACAO DISTRIBUIDA III S.A.",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "3a37c491-5fc7-4950-99f9-753e1377567e",
+      "nome_manter": "CEREAL COMERCIO EXPORTACAO E REPRESENTACAO AGROPECUARIA S.A.",
+      "id_remover": "45225502-1a66-440b-a041-622b26fddbe7",
+      "nome_remover": "CEREAL COMERCIO EXPORTACAO E",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "205e2b86-7db3-41d3-b9b5-7d5778e01102",
+      "nome_manter": "COOXUPE - COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA.",
+      "id_remover": "a0d8467f-79da-4754-810f-bea585d6e515",
+      "nome_remover": "COOXUPE - COOPERATIVA REGIONAL DE",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "30680cd0-75a4-4afa-8f03-9c004d58b0de",
+      "nome_manter": "CYRELA BRAZIL REALTY S.A.",
+      "id_remover": "0bcbd763-35f5-4a1e-9dd0-ab3bb3f066f8",
+      "nome_remover": "CYRELA BRAZIL REALTY S.A. EMPREENDIMENTOS E",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "30680cd0-75a4-4afa-8f03-9c004d58b0de",
+      "nome_manter": "CYRELA BRAZIL REALTY S.A.",
+      "id_remover": "70f4f0ac-597b-48ae-a462-3c219612573f",
+      "nome_remover": "CYRELA BRAZIL REALTY S.A. EMPREENDIMENTOS E PARTICIPACOES",
+      "emissoes_redirecionadas": 1,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "32766723-58ca-48ee-b3cd-e4839836b4b2",
+      "nome_manter": "ENERGISA MATO GROSSO DO SUL - DISTRIBUIDORA DE ENERGIA S.A.",
+      "id_remover": "cc4462f4-7b1e-49ed-b90d-5cf0a23b3e43",
+      "nome_remover": "ENERGISA MATO GROSSO - DISTRIBUIDORA DE ENERGIA S.A.",
+      "emissoes_redirecionadas": 18,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    },
+    {
+      "id_manter": "1cd1b174-1c9f-4aaa-9463-6b39abbae713",
+      "nome_manter": "REDE D'OR SAO LUIZ S.A.",
+      "id_remover": "bd9fc50e-715e-4948-b87b-51d3eb7eca29",
+      "nome_remover": "REDE DOR SAO LUIZ S/A",
+      "emissoes_redirecionadas": 19,
+      "redirect_resultado": "sucesso",
+      "delete_resultado": "sucesso"
+    }
+  ]
+}
