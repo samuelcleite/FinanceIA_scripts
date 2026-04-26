@@ -1,3 +1,4 @@
+import os
 """
 enriquecer_debentures_cvm.py
 ==============================
@@ -35,8 +36,8 @@ from supabase import create_client
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 
-SUPABASE_URL = "https://xvqgamwkjuspeayknvac.supabase.co"
-SUPABASE_KEY = "sb_secret_qDt-3XedIN0Xn5Kv7UkMqg_DeA5QeTO"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 CSV_CVM = "oferta_distribuicao.csv"
 

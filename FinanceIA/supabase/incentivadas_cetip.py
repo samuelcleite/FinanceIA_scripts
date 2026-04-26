@@ -1,3 +1,4 @@
+import os
 """
 marcar_incentivadas_cetip.py
 ==============================
@@ -31,8 +32,8 @@ from supabase import create_client
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 
-SUPABASE_URL = "https://xvqgamwkjuspeayknvac.supabase.co"
-SUPABASE_KEY = "sb_secret_qDt-3XedIN0Xn5Kv7UkMqg_DeA5QeTO"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 XLSX_ANBIMA = "Tabela_12_431_042024_Copia_04f6ca4b59.xlsx"
 RELATORIO = "relatorio_incentivadas_cetip.json"

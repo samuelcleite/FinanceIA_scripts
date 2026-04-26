@@ -1,3 +1,4 @@
+import os
 """
 populate_supabase.py
 Popula as tabelas fundos e fundo_plataformas no Supabase a partir do Excel consolidado.
@@ -22,8 +23,8 @@ from supabase import create_client
 
 # ─── CONFIGURAÇÃO ────────────────────────────────────────────────────────────
 
-SUPABASE_URL  = "SUA_PROJECT_URL"        # ex: https://abcdef.supabase.co
-SUPABASE_KEY  = "SUA_SERVICE_ROLE_KEY"   # service_role key (admin)
+SUPABASE_URL = os.getenv("SUPABASE_URL")        # ex: https://abcdef.supabase.co
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")   # service_role key (admin)
 EXCEL_PATH    = "fundos_revisados_total.xlsx"
 PROGRESS_FILE = "progress_fundos.json"
 

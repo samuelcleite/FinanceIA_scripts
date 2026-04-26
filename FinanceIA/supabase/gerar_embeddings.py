@@ -1,3 +1,4 @@
+import os
 """
 gerar_embeddings.py
 Gera embeddings text-embedding-3-large para todos os fundos na tabela fundos do Supabase
@@ -22,8 +23,8 @@ from supabase import create_client
 
 # ─── CONFIGURAÇÃO ────────────────────────────────────────────────────────────
 
-SUPABASE_URL  = "SUA_PROJECT_URL"
-SUPABASE_KEY  = "SUA_SERVICE_ROLE_KEY"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 OPENAI_KEY    = "SUA_OPENAI_API_KEY"
 
 EMBEDDING_MODEL      = "text-embedding-3-large"

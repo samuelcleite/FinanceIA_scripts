@@ -1,3 +1,4 @@
+import os
 """
 populate_infos_atualizadas.py
 Popula a tabela fundo_infos_atualizadas no Supabase a partir do Excel de dados de mercado (CVM).
@@ -25,8 +26,8 @@ from supabase import create_client
 
 # ─── CONFIGURAÇÃO ────────────────────────────────────────────────────────────
 
-SUPABASE_URL = "SUA_PROJECT_URL"
-SUPABASE_KEY = "SUA_SERVICE_ROLE_KEY"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 EXCEL_PATH   = "dados_mercado_cvm.xlsx"
 SHEET_NAME   = "Dados de Mercado"
 PROGRESS_FILE = "progress_infos.json"

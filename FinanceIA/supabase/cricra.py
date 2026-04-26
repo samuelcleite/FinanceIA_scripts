@@ -1,3 +1,4 @@
+import os
 """
 populate_rf_cri_cra.py
 =======================
@@ -33,8 +34,8 @@ from supabase import create_client
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 
-SUPABASE_URL = "https://xvqgamwkjuspeayknvac.supabase.co"
-SUPABASE_KEY = "sb_secret_qDt-3XedIN0Xn5Kv7UkMqg_DeA5QeTO"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 CSV_PATH = "taxas_CRI_CRA.csv"
 PROGRESS_FILE = "progress_cri_cra.json"
