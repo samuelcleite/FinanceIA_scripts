@@ -1,0 +1,38 @@
+{
+  "ASER_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:47:44.551094",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/aser/: 403 em https://conteudos.xpi.com.br/acoes/aser/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/aser/"
+  },
+  "ALGT_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:48:24.846131",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/algt/: 403 em https://conteudos.xpi.com.br/acoes/algt/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/algt/"
+  },
+  "ALTF_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:48:32.079236",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/altf/: 403 em https://conteudos.xpi.com.br/acoes/altf/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/altf/"
+  },
+  "ARGV_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:48:39.248498",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/argv/: 403 em https://conteudos.xpi.com.br/acoes/argv/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/argv/"
+  },
+  "SPRZ_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:48:46.422972",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/sprz/: 403 em https://conteudos.xpi.com.br/acoes/sprz/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/sprz/"
+  },
+  "TJMM_xp_research_v1": {
+    "_status": "erro",
+    "ts": "2026-04-27T22:48:53.643493",
+    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/tjmm/: 403 em https://conteudos.xpi.com.br/acoes/tjmm/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+    "url": "https://conteudos.xpi.com.br/acoes/tjmm/"
+  }
+}
