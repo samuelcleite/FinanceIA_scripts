@@ -216,7 +216,7 @@ def _tem_relatorio(soup) -> bool:
         and p.count(" ") >= 25
         and (p.count(".") + p.count(",")) >= 3
     ]
-    return len(narrativos) >= 2
+    return len(narrativos) >= 2CLEAR
 # ---------------------------------------------------------------------------
 # Função principal
 # ---------------------------------------------------------------------------
