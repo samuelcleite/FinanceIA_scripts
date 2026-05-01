@@ -1,38 +1,5065 @@
 {
-  "ASER_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:47:44.551094",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/aser/: 403 em https://conteudos.xpi.com.br/acoes/aser/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "ASER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:14.814832",
     "url": "https://conteudos.xpi.com.br/acoes/aser/"
   },
-  "ALGT_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:48:24.846131",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/algt/: 403 em https://conteudos.xpi.com.br/acoes/algt/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "ALGT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:15.719374",
     "url": "https://conteudos.xpi.com.br/acoes/algt/"
   },
-  "ALTF_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:48:32.079236",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/altf/: 403 em https://conteudos.xpi.com.br/acoes/altf/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "ALTF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:16.678322",
     "url": "https://conteudos.xpi.com.br/acoes/altf/"
   },
-  "ARGV_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:48:39.248498",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/argv/: 403 em https://conteudos.xpi.com.br/acoes/argv/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "ARGV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:17.573194",
     "url": "https://conteudos.xpi.com.br/acoes/argv/"
   },
-  "SPRZ_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:48:46.422972",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/sprz/: 403 em https://conteudos.xpi.com.br/acoes/sprz/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "SPRZ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:18.660596",
     "url": "https://conteudos.xpi.com.br/acoes/sprz/"
   },
-  "TJMM_xp_research_v1": {
-    "_status": "erro",
-    "ts": "2026-04-27T22:48:53.643493",
-    "erro": "RuntimeError: Falha ao baixar https://conteudos.xpi.com.br/acoes/tjmm/: 403 em https://conteudos.xpi.com.br/acoes/tjmm/\nTraceback (most recent call last):\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/run_xp.py\", line 95, in main\n    conteudo = extrair(alvo)\n               ^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/fontes/xp/extrair.py\", line 111, in extrair\n    html = fetch_html(alvo.url, fonte=FONTE)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspaces/FinanceIA_scripts/FinanceIA/supabase_rv_rf/core/http.py\", line 77, in fetch_html\n    raise Runtime",
+  "TJMM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:19.680418",
     "url": "https://conteudos.xpi.com.br/acoes/tjmm/"
+  },
+  "ASAB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:20.683676",
+    "url": "https://conteudos.xpi.com.br/acoes/asab/"
+  },
+  "ASSR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:21.830546",
+    "url": "https://conteudos.xpi.com.br/acoes/assr/"
+  },
+  "AALM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:22.895739",
+    "url": "https://conteudos.xpi.com.br/acoes/aalm/"
+  },
+  "AESO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:25.137870",
+    "url": "https://conteudos.xpi.com.br/acoes/aeso/"
+  },
+  "AESB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:27.526237",
+    "url": "https://conteudos.xpi.com.br/acoes/aesb/"
+  },
+  "APFL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:28.646264",
+    "url": "https://conteudos.xpi.com.br/acoes/apfl/"
+  },
+  "B3SA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:38:40.506631",
+    "url": "https://conteudos.xpi.com.br/acoes/b3sa/",
+    "data_referencia": "2026-05-01"
+  },
+  "BBML_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:43.834161",
+    "url": "https://conteudos.xpi.com.br/acoes/bbml/"
+  },
+  "AGXY_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:38:51.656239",
+    "url": "https://conteudos.xpi.com.br/acoes/agxy3/",
+    "data_referencia": "2026-05-01"
+  },
+  "RPAD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:53.815373",
+    "url": "https://conteudos.xpi.com.br/acoes/rpad3/"
+  },
+  "APTI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:38:55.471549",
+    "url": "https://conteudos.xpi.com.br/acoes/apti4/"
+  },
+  "AALR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:01.129640",
+    "url": "https://conteudos.xpi.com.br/acoes/aalr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ALLD_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:06.912724",
+    "url": "https://conteudos.xpi.com.br/acoes/alld3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ALOS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:16.322641",
+    "url": "https://conteudos.xpi.com.br/acoes/alos3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ALPK_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:39:19.466498",
+    "url": "https://conteudos.xpi.com.br/acoes/alpk3/"
+  },
+  "ALPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:39:21.172376",
+    "url": "https://conteudos.xpi.com.br/acoes/alpa3/"
+  },
+  "ALUP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:39:22.788702",
+    "url": "https://conteudos.xpi.com.br/acoes/alup3/"
+  },
+  "ABEV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:32.908162",
+    "url": "https://conteudos.xpi.com.br/acoes/abev3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AMER_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:42.827969",
+    "url": "https://conteudos.xpi.com.br/acoes/amer3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CBEE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:39:44.895049",
+    "url": "https://conteudos.xpi.com.br/acoes/cbee3/"
+  },
+  "ANIM_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:39:53.858588",
+    "url": "https://conteudos.xpi.com.br/acoes/anim3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ARND_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:39:56.073518",
+    "url": "https://conteudos.xpi.com.br/acoes/arnd3/"
+  },
+  "ARML_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:40:04.475753",
+    "url": "https://conteudos.xpi.com.br/acoes/arml3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ARTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:40:05.975317",
+    "url": "https://conteudos.xpi.com.br/acoes/artr3/"
+  },
+  "AURE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:40:51.843107",
+    "url": "https://conteudos.xpi.com.br/acoes/aure3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AMOB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:41:00.173416",
+    "url": "https://conteudos.xpi.com.br/acoes/amob3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AZTE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:02.458274",
+    "url": "https://conteudos.xpi.com.br/acoes/azte3/"
+  },
+  "AZEV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:04.202078",
+    "url": "https://conteudos.xpi.com.br/acoes/azev3/"
+  },
+  "AZUL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:05.999590",
+    "url": "https://conteudos.xpi.com.br/acoes/azul3/"
+  },
+  "BMGB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:41:11.364736",
+    "url": "https://conteudos.xpi.com.br/acoes/bmgb4/",
+    "data_referencia": "2026-05-01"
+  },
+  "BEES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:13.524574",
+    "url": "https://conteudos.xpi.com.br/acoes/bees3/"
+  },
+  "BDLL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:15.136121",
+    "url": "https://conteudos.xpi.com.br/acoes/bdll3/"
+  },
+  "BALM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:16.951999",
+    "url": "https://conteudos.xpi.com.br/acoes/balm3/"
+  },
+  "ABCB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:17.839856",
+    "url": "https://conteudos.xpi.com.br/acoes/abcb3/"
+  },
+  "BAZA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:19.640928",
+    "url": "https://conteudos.xpi.com.br/acoes/baza3/"
+  },
+  "BBDC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:21.425360",
+    "url": "https://conteudos.xpi.com.br/acoes/bbdc3/"
+  },
+  "BPAC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:22.991899",
+    "url": "https://conteudos.xpi.com.br/acoes/bpac3/"
+  },
+  "BGIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:24.472774",
+    "url": "https://conteudos.xpi.com.br/acoes/bgip3/"
+  },
+  "BPAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:26.040217",
+    "url": "https://conteudos.xpi.com.br/acoes/bpar3/"
+  },
+  "BMIN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:27.630557",
+    "url": "https://conteudos.xpi.com.br/acoes/bmin3/"
+  },
+  "BMEB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:29.169465",
+    "url": "https://conteudos.xpi.com.br/acoes/bmeb3/"
+  },
+  "BNBR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:41:37.276606",
+    "url": "https://conteudos.xpi.com.br/acoes/bnbr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SANB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:39.257564",
+    "url": "https://conteudos.xpi.com.br/acoes/sanb3/"
+  },
+  "CCTY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:41.111646",
+    "url": "https://conteudos.xpi.com.br/acoes/ccty3/"
+  },
+  "BMOB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:41:49.313951",
+    "url": "https://conteudos.xpi.com.br/acoes/bmob3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BMKS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:52.158161",
+    "url": "https://conteudos.xpi.com.br/acoes/bmks3/"
+  },
+  "BIOM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:41:53.652233",
+    "url": "https://conteudos.xpi.com.br/acoes/biom3/"
+  },
+  "BLAU_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:42:01.992035",
+    "url": "https://conteudos.xpi.com.br/acoes/blau3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SOJA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:42:09.590157",
+    "url": "https://conteudos.xpi.com.br/acoes/soja3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BHIA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:42:18.479677",
+    "url": "https://conteudos.xpi.com.br/acoes/bhia3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BRML_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:42:30.556433",
+    "url": "https://conteudos.xpi.com.br/acoes/brml/",
+    "data_referencia": "2026-05-01"
+  },
+  "BDLS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:32.387960",
+    "url": "https://conteudos.xpi.com.br/acoes/bdls/"
+  },
+  "TEPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:33.277588",
+    "url": "https://conteudos.xpi.com.br/acoes/tepa/"
+  },
+  "BTCL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:34.286402",
+    "url": "https://conteudos.xpi.com.br/acoes/btcl/"
+  },
+  "BSCS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:35.266886",
+    "url": "https://conteudos.xpi.com.br/acoes/bscs/"
+  },
+  "BRFS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:42:45.062686",
+    "url": "https://conteudos.xpi.com.br/acoes/brfs/",
+    "data_referencia": "2026-05-01"
+  },
+  "RMSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:46.547424",
+    "url": "https://conteudos.xpi.com.br/acoes/rmsa/"
+  },
+  "CPTE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:47.787305",
+    "url": "https://conteudos.xpi.com.br/acoes/cpte/"
+  },
+  "CMGD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:48.880021",
+    "url": "https://conteudos.xpi.com.br/acoes/cmgd/"
+  },
+  "CMGT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:49.938103",
+    "url": "https://conteudos.xpi.com.br/acoes/cmgt/"
+  },
+  "ELTN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:50.827918",
+    "url": "https://conteudos.xpi.com.br/acoes/eltn/"
+  },
+  "CEPE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:53.016314",
+    "url": "https://conteudos.xpi.com.br/acoes/cepe/"
+  },
+  "CSRN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:55.287869",
+    "url": "https://conteudos.xpi.com.br/acoes/csrn/"
+  },
+  "CGEE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:42:57.622003",
+    "url": "https://conteudos.xpi.com.br/acoes/cgee/"
+  },
+  "CATA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:00.460415",
+    "url": "https://conteudos.xpi.com.br/acoes/cata/"
+  },
+  "CRCG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:01.374030",
+    "url": "https://conteudos.xpi.com.br/acoes/crcg/"
+  },
+  "SCCC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:03.126050",
+    "url": "https://conteudos.xpi.com.br/acoes/sccc/"
+  },
+  "B100_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:04.244192",
+    "url": "https://conteudos.xpi.com.br/acoes/b100/"
+  },
+  "CIEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:07.468510",
+    "url": "https://conteudos.xpi.com.br/acoes/ciel/"
+  },
+  "CLIS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:08.317297",
+    "url": "https://conteudos.xpi.com.br/acoes/clis/"
+  },
+  "COMR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:10.634801",
+    "url": "https://conteudos.xpi.com.br/acoes/comr/"
+  },
+  "AGRO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:43:16.563086",
+    "url": "https://conteudos.xpi.com.br/acoes/agro3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BRKM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:18.735075",
+    "url": "https://conteudos.xpi.com.br/acoes/brkm3/"
+  },
+  "BRAV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:43:27.422169",
+    "url": "https://conteudos.xpi.com.br/acoes/brav3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BSLI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:29.930583",
+    "url": "https://conteudos.xpi.com.br/acoes/bsli3/"
+  },
+  "BRBI_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:43:39.037092",
+    "url": "https://conteudos.xpi.com.br/acoes/brbi11/",
+    "data_referencia": "2026-05-01"
+  },
+  "BRQB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:40.956692",
+    "url": "https://conteudos.xpi.com.br/acoes/brqb3/"
+  },
+  "CXSE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:43:48.690749",
+    "url": "https://conteudos.xpi.com.br/acoes/cxse3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CAMB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:43:50.926279",
+    "url": "https://conteudos.xpi.com.br/acoes/camb3/"
+  },
+  "CAML_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:43:59.066834",
+    "url": "https://conteudos.xpi.com.br/acoes/caml3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CEAB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:44:07.660813",
+    "url": "https://conteudos.xpi.com.br/acoes/ceab3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CLSC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:09.677943",
+    "url": "https://conteudos.xpi.com.br/acoes/clsc3/"
+  },
+  "PCAR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:44:18.033121",
+    "url": "https://conteudos.xpi.com.br/acoes/pcar3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CASN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:44:26.195779",
+    "url": "https://conteudos.xpi.com.br/acoes/casn3/",
+    "data_referencia": "2026-05-01"
+  },
+  "GPAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:28.323619",
+    "url": "https://conteudos.xpi.com.br/acoes/gpar3/"
+  },
+  "CEEB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:29.724351",
+    "url": "https://conteudos.xpi.com.br/acoes/ceeb3/"
+  },
+  "CEBR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:44:38.342069",
+    "url": "https://conteudos.xpi.com.br/acoes/cebr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CMIG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:40.424366",
+    "url": "https://conteudos.xpi.com.br/acoes/cmig3/"
+  },
+  "COCE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:42.029253",
+    "url": "https://conteudos.xpi.com.br/acoes/coce3/"
+  },
+  "FESA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:44.022937",
+    "url": "https://conteudos.xpi.com.br/acoes/fesa3/"
+  },
+  "CEDO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:45.615942",
+    "url": "https://conteudos.xpi.com.br/acoes/cedo3/"
+  },
+  "CGAS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:47.405370",
+    "url": "https://conteudos.xpi.com.br/acoes/cgas3/"
+  },
+  "HBTS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:49.067553",
+    "url": "https://conteudos.xpi.com.br/acoes/hbts3/"
+  },
+  "CPLE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:44:57.444936",
+    "url": "https://conteudos.xpi.com.br/acoes/cple3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PEAB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:44:59.524812",
+    "url": "https://conteudos.xpi.com.br/acoes/peab3/"
+  },
+  "PALF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:00.433950",
+    "url": "https://conteudos.xpi.com.br/acoes/palf3/"
+  },
+  "CPFP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:01.400267",
+    "url": "https://conteudos.xpi.com.br/acoes/cpfp3/"
+  },
+  "CSMG_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:45:10.866652",
+    "url": "https://conteudos.xpi.com.br/acoes/csmg3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SAPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:12.886341",
+    "url": "https://conteudos.xpi.com.br/acoes/sapr3/"
+  },
+  "CSNA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:45:23.498063",
+    "url": "https://conteudos.xpi.com.br/acoes/csna3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CTSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:25.770931",
+    "url": "https://conteudos.xpi.com.br/acoes/ctsa3/"
+  },
+  "COGN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:45:34.876930",
+    "url": "https://conteudos.xpi.com.br/acoes/cogn3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CBAV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:45:44.589124",
+    "url": "https://conteudos.xpi.com.br/acoes/cbav3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MTRO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:46.076424",
+    "url": "https://conteudos.xpi.com.br/acoes/mtro/"
+  },
+  "PASS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:48.397652",
+    "url": "https://conteudos.xpi.com.br/acoes/pass/"
+  },
+  "RPTA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:49.435974",
+    "url": "https://conteudos.xpi.com.br/acoes/rpta/"
+  },
+  "AGRU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:50.846193",
+    "url": "https://conteudos.xpi.com.br/acoes/agru/"
+  },
+  "ECOV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:52.069291",
+    "url": "https://conteudos.xpi.com.br/acoes/ecov/"
+  },
+  "CRTE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:55.714545",
+    "url": "https://conteudos.xpi.com.br/acoes/crte/"
+  },
+  "ASCP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:56.758408",
+    "url": "https://conteudos.xpi.com.br/acoes/ascp/"
+  },
+  "RDVT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:58.081215",
+    "url": "https://conteudos.xpi.com.br/acoes/rdvt/"
+  },
+  "CRBD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:58.988947",
+    "url": "https://conteudos.xpi.com.br/acoes/crbd/"
+  },
+  "ANHB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:45:59.961241",
+    "url": "https://conteudos.xpi.com.br/acoes/anhb/"
+  },
+  "RLMS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:01.246990",
+    "url": "https://conteudos.xpi.com.br/acoes/rlms/"
+  },
+  "COMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:02.211321",
+    "url": "https://conteudos.xpi.com.br/acoes/coma/"
+  },
+  "CRNP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:03.330064",
+    "url": "https://conteudos.xpi.com.br/acoes/crnp/"
+  },
+  "CSRR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:04.318550",
+    "url": "https://conteudos.xpi.com.br/acoes/csrr/"
+  },
+  "CRCF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:05.187354",
+    "url": "https://conteudos.xpi.com.br/acoes/crcf/"
+  },
+  "CRTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:06.180863",
+    "url": "https://conteudos.xpi.com.br/acoes/crtr/"
+  },
+  "CRTA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:07.096040",
+    "url": "https://conteudos.xpi.com.br/acoes/crta/"
+  },
+  "RIAA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:46:15.812873",
+    "url": "https://conteudos.xpi.com.br/acoes/riaa3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CMTS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:17.466350",
+    "url": "https://conteudos.xpi.com.br/acoes/cmts/"
+  },
+  "CPLD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:18.397246",
+    "url": "https://conteudos.xpi.com.br/acoes/cpld/"
+  },
+  "CTEP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:19.420939",
+    "url": "https://conteudos.xpi.com.br/acoes/ctep/"
+  },
+  "CLII_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:20.421356",
+    "url": "https://conteudos.xpi.com.br/acoes/clii/"
+  },
+  "CPRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:23.602232",
+    "url": "https://conteudos.xpi.com.br/acoes/cpre/"
+  },
+  "EEEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:27.195942",
+    "url": "https://conteudos.xpi.com.br/acoes/eeel/"
+  },
+  "CPXD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:28.130488",
+    "url": "https://conteudos.xpi.com.br/acoes/cpxd/"
+  },
+  "CTCA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:30.571018",
+    "url": "https://conteudos.xpi.com.br/acoes/ctca/"
+  },
+  "LLBI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:33.695508",
+    "url": "https://conteudos.xpi.com.br/acoes/llbi/"
+  },
+  "DBEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:34.752674",
+    "url": "https://conteudos.xpi.com.br/acoes/dben/"
+  },
+  "ECOC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:36.104629",
+    "url": "https://conteudos.xpi.com.br/acoes/ecoc/"
+  },
+  "ECRD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:37.090447",
+    "url": "https://conteudos.xpi.com.br/acoes/ecrd/"
+  },
+  "ERDV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:37.963218",
+    "url": "https://conteudos.xpi.com.br/acoes/erdv/"
+  },
+  "CONR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:38.768589",
+    "url": "https://conteudos.xpi.com.br/acoes/conr/"
+  },
+  "EBCL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:39.587910",
+    "url": "https://conteudos.xpi.com.br/acoes/ebcl/"
+  },
+  "DMRJ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:41.126010",
+    "url": "https://conteudos.xpi.com.br/acoes/dmrj/"
+  },
+  "CALI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:43.018977",
+    "url": "https://conteudos.xpi.com.br/acoes/cali3/"
+  },
+  "TEND_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:46:52.686738",
+    "url": "https://conteudos.xpi.com.br/acoes/tend3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CTAX_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:46:54.141939",
+    "url": "https://conteudos.xpi.com.br/acoes/ctax3/"
+  },
+  "CPFE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:02.284764",
+    "url": "https://conteudos.xpi.com.br/acoes/cpfe3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CSED_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:11.710100",
+    "url": "https://conteudos.xpi.com.br/acoes/csed3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CMIN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:21.761829",
+    "url": "https://conteudos.xpi.com.br/acoes/cmin3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CSUD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:47:23.705469",
+    "url": "https://conteudos.xpi.com.br/acoes/csud3/"
+  },
+  "CURY_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:33.282037",
+    "url": "https://conteudos.xpi.com.br/acoes/cury3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CYRE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:42.625809",
+    "url": "https://conteudos.xpi.com.br/acoes/cyre3/",
+    "data_referencia": "2026-05-01"
+  },
+  "DMVF_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:47:51.397961",
+    "url": "https://conteudos.xpi.com.br/acoes/dmvf3/",
+    "data_referencia": "2026-05-01"
+  },
+  "DESK_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:48:01.812435",
+    "url": "https://conteudos.xpi.com.br/acoes/desk3/",
+    "data_referencia": "2026-05-01"
+  },
+  "DXCO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:03.977812",
+    "url": "https://conteudos.xpi.com.br/acoes/dxco3/"
+  },
+  "DEXP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:05.448055",
+    "url": "https://conteudos.xpi.com.br/acoes/dexp3/"
+  },
+  "PNVL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:48:14.497268",
+    "url": "https://conteudos.xpi.com.br/acoes/pnvl3/",
+    "data_referencia": "2026-05-01"
+  },
+  "DIRR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:48:24.513121",
+    "url": "https://conteudos.xpi.com.br/acoes/dirr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "DOHL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:26.679642",
+    "url": "https://conteudos.xpi.com.br/acoes/dohl3/"
+  },
+  "DOTZ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:28.283990",
+    "url": "https://conteudos.xpi.com.br/acoes/dotz3/"
+  },
+  "DTCY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:29.722843",
+    "url": "https://conteudos.xpi.com.br/acoes/dtcy3/"
+  },
+  "ESCE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:30.564183",
+    "url": "https://conteudos.xpi.com.br/acoes/esce3/"
+  },
+  "EBEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:31.508972",
+    "url": "https://conteudos.xpi.com.br/acoes/eben3/"
+  },
+  "EALT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:33.512420",
+    "url": "https://conteudos.xpi.com.br/acoes/ealt3/"
+  },
+  "EKTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:35.151671",
+    "url": "https://conteudos.xpi.com.br/acoes/ektr3/"
+  },
+  "GFSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:36.869420",
+    "url": "https://conteudos.xpi.com.br/acoes/gfsa3/"
+  },
+  "ELFA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:37.712876",
+    "url": "https://conteudos.xpi.com.br/acoes/elfa/"
+  },
+  "GSHP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:39.495530",
+    "url": "https://conteudos.xpi.com.br/acoes/gshp3/"
+  },
+  "GGBR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:41.068393",
+    "url": "https://conteudos.xpi.com.br/acoes/ggbr3/"
+  },
+  "GGPS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:42.861968",
+    "url": "https://conteudos.xpi.com.br/acoes/ggps3/"
+  },
+  "EGGY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:44.570359",
+    "url": "https://conteudos.xpi.com.br/acoes/eggy3/"
+  },
+  "CGRA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:48:46.066936",
+    "url": "https://conteudos.xpi.com.br/acoes/cgra3/"
+  },
+  "GRND_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:48:55.609277",
+    "url": "https://conteudos.xpi.com.br/acoes/grnd3/",
+    "data_referencia": "2026-05-01"
+  },
+  "GMAT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:49:04.971134",
+    "url": "https://conteudos.xpi.com.br/acoes/gmat3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MLAS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:49:12.834515",
+    "url": "https://conteudos.xpi.com.br/acoes/mlas3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ENSE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:14.461178",
+    "url": "https://conteudos.xpi.com.br/acoes/ense/"
+  },
+  "SBFG_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:49:23.685348",
+    "url": "https://conteudos.xpi.com.br/acoes/sbfg3/",
+    "data_referencia": "2026-05-01"
+  },
+  "TOKY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:25.836985",
+    "url": "https://conteudos.xpi.com.br/acoes/toky3/"
+  },
+  "HAGA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:27.514134",
+    "url": "https://conteudos.xpi.com.br/acoes/haga3/"
+  },
+  "EPRW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:28.497395",
+    "url": "https://conteudos.xpi.com.br/acoes/eprw/"
+  },
+  "EPRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:29.361696",
+    "url": "https://conteudos.xpi.com.br/acoes/epri/"
+  },
+  "EPRL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:30.405909",
+    "url": "https://conteudos.xpi.com.br/acoes/eprl/"
+  },
+  "ERPM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:31.300427",
+    "url": "https://conteudos.xpi.com.br/acoes/erpm/"
+  },
+  "EQMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:33.526740",
+    "url": "https://conteudos.xpi.com.br/acoes/eqma/"
+  },
+  "HAPV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:49:42.400284",
+    "url": "https://conteudos.xpi.com.br/acoes/hapv3/",
+    "data_referencia": "2026-05-01"
+  },
+  "HBRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:44.602735",
+    "url": "https://conteudos.xpi.com.br/acoes/hbre3/"
+  },
+  "AEGE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:45.558213",
+    "url": "https://conteudos.xpi.com.br/acoes/aege/"
+  },
+  "CGBP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:46.357875",
+    "url": "https://conteudos.xpi.com.br/acoes/cgbp/"
+  },
+  "HBOR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:48.346127",
+    "url": "https://conteudos.xpi.com.br/acoes/hbor3/"
+  },
+  "HETA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:49.899421",
+    "url": "https://conteudos.xpi.com.br/acoes/heta3/"
+  },
+  "EUFA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:49:50.807003",
+    "url": "https://conteudos.xpi.com.br/acoes/eufa/"
+  },
+  "MATD_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:49:59.915697",
+    "url": "https://conteudos.xpi.com.br/acoes/matd3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VLID_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:02.029212",
+    "url": "https://conteudos.xpi.com.br/acoes/vlid3/"
+  },
+  "FGEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:03.119267",
+    "url": "https://conteudos.xpi.com.br/acoes/fgen/"
+  },
+  "FISI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:04.222851",
+    "url": "https://conteudos.xpi.com.br/acoes/fisi/"
+  },
+  "FZRC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:05.189500",
+    "url": "https://conteudos.xpi.com.br/acoes/fzrc/"
+  },
+  "SUMI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:06.298995",
+    "url": "https://conteudos.xpi.com.br/acoes/sumi/"
+  },
+  "SALT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:07.176260",
+    "url": "https://conteudos.xpi.com.br/acoes/salt/"
+  },
+  "HVSP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:08.092257",
+    "url": "https://conteudos.xpi.com.br/acoes/hvsp/"
+  },
+  "HMOB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:10.214188",
+    "url": "https://conteudos.xpi.com.br/acoes/hmob/"
+  },
+  "HARG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:11.543357",
+    "url": "https://conteudos.xpi.com.br/acoes/harg/"
+  },
+  "EMAE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:13.235118",
+    "url": "https://conteudos.xpi.com.br/acoes/emae3/"
+  },
+  "EPAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:14.733736",
+    "url": "https://conteudos.xpi.com.br/acoes/epar3/"
+  },
+  "PGMN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:50:23.094179",
+    "url": "https://conteudos.xpi.com.br/acoes/pgmn3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ENER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:24.550238",
+    "url": "https://conteudos.xpi.com.br/acoes/ener3/"
+  },
+  "ENMT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:26.090483",
+    "url": "https://conteudos.xpi.com.br/acoes/enmt3/"
+  },
+  "ENGI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T15:50:28.286847",
+    "url": "https://conteudos.xpi.com.br/acoes/engi3/"
+  },
+  "ENEV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:50:37.196613",
+    "url": "https://conteudos.xpi.com.br/acoes/enev3/",
+    "data_referencia": "2026-05-01"
+  },
+  "EGIE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T15:50:49.478491",
+    "url": "https://conteudos.xpi.com.br/acoes/egie3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ENJU_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:46:41.552405",
+    "url": "https://conteudos.xpi.com.br/acoes/enju3/",
+    "data_referencia": "2026-05-01"
+  },
+  "EQPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:46:45.047412",
+    "url": "https://conteudos.xpi.com.br/acoes/eqpa3/"
+  },
+  "EQTL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:46:58.204557",
+    "url": "https://conteudos.xpi.com.br/acoes/eqtl3/",
+    "data_referencia": "2026-05-01"
+  },
+  "EUCA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:00.546792",
+    "url": "https://conteudos.xpi.com.br/acoes/euca3/"
+  },
+  "EVEN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:47:10.106153",
+    "url": "https://conteudos.xpi.com.br/acoes/even3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BAUH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:12.419852",
+    "url": "https://conteudos.xpi.com.br/acoes/bauh3/"
+  },
+  "EZTC_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:47:23.925018",
+    "url": "https://conteudos.xpi.com.br/acoes/eztc3/",
+    "data_referencia": "2026-05-01"
+  },
+  "FHER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:26.207784",
+    "url": "https://conteudos.xpi.com.br/acoes/fher3/"
+  },
+  "FIEI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:31.029759",
+    "url": "https://conteudos.xpi.com.br/acoes/fiei3/"
+  },
+  "FICT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:31.992615",
+    "url": "https://conteudos.xpi.com.br/acoes/fict3/"
+  },
+  "FLRY_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:47:41.476352",
+    "url": "https://conteudos.xpi.com.br/acoes/flry3/",
+    "data_referencia": "2026-05-01"
+  },
+  "IGTA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:47:49.158488",
+    "url": "https://conteudos.xpi.com.br/acoes/igta/",
+    "data_referencia": "2026-05-01"
+  },
+  "INNC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:52.136390",
+    "url": "https://conteudos.xpi.com.br/acoes/innc/"
+  },
+  "IVPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:56.216315",
+    "url": "https://conteudos.xpi.com.br/acoes/ivpr/"
+  },
+  "JMCD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:57.297243",
+    "url": "https://conteudos.xpi.com.br/acoes/jmcd/"
+  },
+  "KLAS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:47:59.788283",
+    "url": "https://conteudos.xpi.com.br/acoes/klas/"
+  },
+  "KRSA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:48:12.181489",
+    "url": "https://conteudos.xpi.com.br/acoes/krsa/",
+    "data_referencia": "2026-05-01"
+  },
+  "TUTO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:13.632876",
+    "url": "https://conteudos.xpi.com.br/acoes/tuto/"
+  },
+  "LETS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:14.942616",
+    "url": "https://conteudos.xpi.com.br/acoes/lets/"
+  },
+  "LMED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:21.542262",
+    "url": "https://conteudos.xpi.com.br/acoes/lmed/"
+  },
+  "LTEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:27.324214",
+    "url": "https://conteudos.xpi.com.br/acoes/ltel/"
+  },
+  "LTLA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:31.488432",
+    "url": "https://conteudos.xpi.com.br/acoes/ltla/"
+  },
+  "MSRO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:35.571811",
+    "url": "https://conteudos.xpi.com.br/acoes/msro/"
+  },
+  "MANT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:36.482788",
+    "url": "https://conteudos.xpi.com.br/acoes/mant/"
+  },
+  "HYPE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:48:45.098284",
+    "url": "https://conteudos.xpi.com.br/acoes/hype3/",
+    "data_referencia": "2026-05-01"
+  },
+  "IGSN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:47.466174",
+    "url": "https://conteudos.xpi.com.br/acoes/igsn3/"
+  },
+  "INEP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:50.756640",
+    "url": "https://conteudos.xpi.com.br/acoes/inep3/"
+  },
+  "IFCM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:48:52.910755",
+    "url": "https://conteudos.xpi.com.br/acoes/ifcm3/"
+  },
+  "MEAL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:49:00.278938",
+    "url": "https://conteudos.xpi.com.br/acoes/meal3/",
+    "data_referencia": "2026-05-01"
+  },
+  "FIGE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:49:02.522466",
+    "url": "https://conteudos.xpi.com.br/acoes/fige3/"
+  },
+  "MYPK_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:49:11.662655",
+    "url": "https://conteudos.xpi.com.br/acoes/mypk3/",
+    "data_referencia": "2026-05-01"
+  },
+  "RANI_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:49:24.636595",
+    "url": "https://conteudos.xpi.com.br/acoes/rani3/",
+    "data_referencia": "2026-05-01"
+  },
+  "IRBR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:49:27.110693",
+    "url": "https://conteudos.xpi.com.br/acoes/irbr3/"
+  },
+  "ISAE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:49:28.802623",
+    "url": "https://conteudos.xpi.com.br/acoes/isae3/"
+  },
+  "ITSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:49:32.845452",
+    "url": "https://conteudos.xpi.com.br/acoes/itsa3/"
+  },
+  "JALL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:49:42.234694",
+    "url": "https://conteudos.xpi.com.br/acoes/jall3/",
+    "data_referencia": "2026-05-01"
+  },
+  "JHSF_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:49:53.305237",
+    "url": "https://conteudos.xpi.com.br/acoes/jhsf3/",
+    "data_referencia": "2026-05-01"
+  },
+  "JFEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:49:55.351828",
+    "url": "https://conteudos.xpi.com.br/acoes/jfen3/"
+  },
+  "JSLG_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:50:04.638466",
+    "url": "https://conteudos.xpi.com.br/acoes/jslg3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CTKA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:50:06.812645",
+    "url": "https://conteudos.xpi.com.br/acoes/ctka3/"
+  },
+  "KEPL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:50:15.913352",
+    "url": "https://conteudos.xpi.com.br/acoes/kepl3/",
+    "data_referencia": "2026-05-01"
+  },
+  "KLBN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:50:20.333010",
+    "url": "https://conteudos.xpi.com.br/acoes/klbn3/"
+  },
+  "LIGT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:50:31.643861",
+    "url": "https://conteudos.xpi.com.br/acoes/ligt3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LIGH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:50:33.228166",
+    "url": "https://conteudos.xpi.com.br/acoes/ligh3/"
+  },
+  "WDCN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:50:36.898334",
+    "url": "https://conteudos.xpi.com.br/acoes/wdcn3/"
+  },
+  "RENT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:50:47.570968",
+    "url": "https://conteudos.xpi.com.br/acoes/rent3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LOGG_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:50:57.077567",
+    "url": "https://conteudos.xpi.com.br/acoes/logg3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LJQQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:00.275178",
+    "url": "https://conteudos.xpi.com.br/acoes/ljqq3/"
+  },
+  "LREN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:51:10.505050",
+    "url": "https://conteudos.xpi.com.br/acoes/lren3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LPSB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:13.408537",
+    "url": "https://conteudos.xpi.com.br/acoes/lpsb3/"
+  },
+  "LUPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:16.222466",
+    "url": "https://conteudos.xpi.com.br/acoes/lupa3/"
+  },
+  "LWSA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:51:24.398154",
+    "url": "https://conteudos.xpi.com.br/acoes/lwsa3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MGLU_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:51:34.560182",
+    "url": "https://conteudos.xpi.com.br/acoes/mglu3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LEVE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:37.322057",
+    "url": "https://conteudos.xpi.com.br/acoes/leve3/"
+  },
+  "MGEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:39.311065",
+    "url": "https://conteudos.xpi.com.br/acoes/mgel3/"
+  },
+  "POMO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:41.711561",
+    "url": "https://conteudos.xpi.com.br/acoes/pomo3/"
+  },
+  "MBRF_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:51:50.361289",
+    "url": "https://conteudos.xpi.com.br/acoes/mbrf3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AMAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:51:52.640538",
+    "url": "https://conteudos.xpi.com.br/acoes/amar3/"
+  },
+  "CASH_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:52:03.079673",
+    "url": "https://conteudos.xpi.com.br/acoes/cash3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MELK_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:52:11.952447",
+    "url": "https://conteudos.xpi.com.br/acoes/melk3/",
+    "data_referencia": "2026-05-01"
+  },
+  "FRIO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:15.925263",
+    "url": "https://conteudos.xpi.com.br/acoes/frio3/"
+  },
+  "RSUL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:19.085355",
+    "url": "https://conteudos.xpi.com.br/acoes/rsul3/"
+  },
+  "MTSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:20.626364",
+    "url": "https://conteudos.xpi.com.br/acoes/mtsa3/"
+  },
+  "MILS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:52:29.603372",
+    "url": "https://conteudos.xpi.com.br/acoes/mils3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VIVR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:32.251523",
+    "url": "https://conteudos.xpi.com.br/acoes/vivr3/"
+  },
+  "MRSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:35.071031",
+    "url": "https://conteudos.xpi.com.br/acoes/mrsa/"
+  },
+  "NRTB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:35.979273",
+    "url": "https://conteudos.xpi.com.br/acoes/nrtb/"
+  },
+  "NTEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:36.950514",
+    "url": "https://conteudos.xpi.com.br/acoes/nten/"
+  },
+  "NTSD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:37.812618",
+    "url": "https://conteudos.xpi.com.br/acoes/ntsd/"
+  },
+  "OCEA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:38.697156",
+    "url": "https://conteudos.xpi.com.br/acoes/ocea/"
+  },
+  "ORIG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:39.633550",
+    "url": "https://conteudos.xpi.com.br/acoes/orig/"
+  },
+  "ORMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:40.652483",
+    "url": "https://conteudos.xpi.com.br/acoes/orma/"
+  },
+  "PCBU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:41.647142",
+    "url": "https://conteudos.xpi.com.br/acoes/pcbu/"
+  },
+  "PSAN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:42.644814",
+    "url": "https://conteudos.xpi.com.br/acoes/psan/"
+  },
+  "PDGS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:43.541085",
+    "url": "https://conteudos.xpi.com.br/acoes/pdgs/"
+  },
+  "PTCA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:47.384931",
+    "url": "https://conteudos.xpi.com.br/acoes/ptca/"
+  },
+  "PFOR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:48.273264",
+    "url": "https://conteudos.xpi.com.br/acoes/pfor/"
+  },
+  "PRMN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:51.363058",
+    "url": "https://conteudos.xpi.com.br/acoes/prmn/"
+  },
+  "QUSW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:54.031557",
+    "url": "https://conteudos.xpi.com.br/acoes/qusw/"
+  },
+  "RESA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:52:55.060088",
+    "url": "https://conteudos.xpi.com.br/acoes/resa/"
+  },
+  "BEEF_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:53:05.642529",
+    "url": "https://conteudos.xpi.com.br/acoes/beef3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MTRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:53:07.866602",
+    "url": "https://conteudos.xpi.com.br/acoes/mtre3/"
+  },
+  "MOTV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:53:17.725634",
+    "url": "https://conteudos.xpi.com.br/acoes/motv3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MDNE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:53:27.500613",
+    "url": "https://conteudos.xpi.com.br/acoes/mdne3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MOVI_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:53:39.457622",
+    "url": "https://conteudos.xpi.com.br/acoes/movi3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ESPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:53:41.904277",
+    "url": "https://conteudos.xpi.com.br/acoes/espa3/"
+  },
+  "MULT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:53:52.023473",
+    "url": "https://conteudos.xpi.com.br/acoes/mult3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MNDL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:53:55.488827",
+    "url": "https://conteudos.xpi.com.br/acoes/mndl3/"
+  },
+  "NATU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:53:58.018016",
+    "url": "https://conteudos.xpi.com.br/acoes/natu3/"
+  },
+  "NEOE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:54:07.372071",
+    "url": "https://conteudos.xpi.com.br/acoes/neoe3/",
+    "data_referencia": "2026-05-01"
+  },
+  "NGRD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:09.464604",
+    "url": "https://conteudos.xpi.com.br/acoes/ngrd3/"
+  },
+  "NORD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:10.979469",
+    "url": "https://conteudos.xpi.com.br/acoes/nord3/"
+  },
+  "NUTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:15.015264",
+    "url": "https://conteudos.xpi.com.br/acoes/nutr3/"
+  },
+  "OPCT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:18.455549",
+    "url": "https://conteudos.xpi.com.br/acoes/opct3/"
+  },
+  "ODPV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:54:28.554563",
+    "url": "https://conteudos.xpi.com.br/acoes/odpv3/",
+    "data_referencia": "2026-05-01"
+  },
+  "OIBR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:31.014379",
+    "url": "https://conteudos.xpi.com.br/acoes/oibr3/"
+  },
+  "OBTC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:31.887995",
+    "url": "https://conteudos.xpi.com.br/acoes/obtc3/"
+  },
+  "ORVR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:54:41.683410",
+    "url": "https://conteudos.xpi.com.br/acoes/orvr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "OSXB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:43.671265",
+    "url": "https://conteudos.xpi.com.br/acoes/osxb3/"
+  },
+  "OFSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:46.190888",
+    "url": "https://conteudos.xpi.com.br/acoes/ofsa3/"
+  },
+  "PDTC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:48.439198",
+    "url": "https://conteudos.xpi.com.br/acoes/pdtc3/"
+  },
+  "PATI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:50.434679",
+    "url": "https://conteudos.xpi.com.br/acoes/pati3/"
+  },
+  "PRBC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:51.211182",
+    "url": "https://conteudos.xpi.com.br/acoes/prbc4/"
+  },
+  "PTBL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:52.807185",
+    "url": "https://conteudos.xpi.com.br/acoes/ptbl3/"
+  },
+  "PDGR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:54:54.164826",
+    "url": "https://conteudos.xpi.com.br/acoes/pdgr3/"
+  },
+  "PETZ_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:55:01.273485",
+    "url": "https://conteudos.xpi.com.br/acoes/petz3/",
+    "data_referencia": "2026-05-01"
+  },
+  "RECV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:55:09.240662",
+    "url": "https://conteudos.xpi.com.br/acoes/recv3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PTNT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:11.707273",
+    "url": "https://conteudos.xpi.com.br/acoes/ptnt3/"
+  },
+  "PLPL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:55:24.496620",
+    "url": "https://conteudos.xpi.com.br/acoes/plpl3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PLAS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:26.872831",
+    "url": "https://conteudos.xpi.com.br/acoes/plas3/"
+  },
+  "PSSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:28.424209",
+    "url": "https://conteudos.xpi.com.br/acoes/pssa3/"
+  },
+  "PSVM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:30.191046",
+    "url": "https://conteudos.xpi.com.br/acoes/psvm11/"
+  },
+  "POSI_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:55:39.304519",
+    "url": "https://conteudos.xpi.com.br/acoes/posi3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PRIO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:55:48.542684",
+    "url": "https://conteudos.xpi.com.br/acoes/prio3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PFRM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:50.581161",
+    "url": "https://conteudos.xpi.com.br/acoes/pfrm3/"
+  },
+  "QUAL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:55:52.286704",
+    "url": "https://conteudos.xpi.com.br/acoes/qual3/"
+  },
+  "RADL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:56:00.164248",
+    "url": "https://conteudos.xpi.com.br/acoes/radl3/",
+    "data_referencia": "2026-05-01"
+  },
+  "RAIZ_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:56:09.649512",
+    "url": "https://conteudos.xpi.com.br/acoes/raiz4/",
+    "data_referencia": "2026-05-01"
+  },
+  "CCLS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:11.086664",
+    "url": "https://conteudos.xpi.com.br/acoes/ccls/"
+  },
+  "RDNI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:14.078460",
+    "url": "https://conteudos.xpi.com.br/acoes/rdni/"
+  },
+  "RBNS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:16.634871",
+    "url": "https://conteudos.xpi.com.br/acoes/rbns/"
+  },
+  "COLN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:17.470280",
+    "url": "https://conteudos.xpi.com.br/acoes/coln/"
+  },
+  "RODB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:18.405674",
+    "url": "https://conteudos.xpi.com.br/acoes/rodb/"
+  },
+  "RMCE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:19.592306",
+    "url": "https://conteudos.xpi.com.br/acoes/rmce/"
+  },
+  "FRRN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:21.863500",
+    "url": "https://conteudos.xpi.com.br/acoes/frrn/"
+  },
+  "GASC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:22.871779",
+    "url": "https://conteudos.xpi.com.br/acoes/gasc/"
+  },
+  "SBFC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:23.741585",
+    "url": "https://conteudos.xpi.com.br/acoes/sbfc/"
+  },
+  "SRNA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:56:35.213294",
+    "url": "https://conteudos.xpi.com.br/acoes/srna/",
+    "data_referencia": "2026-05-01"
+  },
+  "SEGE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:36.831043",
+    "url": "https://conteudos.xpi.com.br/acoes/sege/"
+  },
+  "TECG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:37.720484",
+    "url": "https://conteudos.xpi.com.br/acoes/tecg/"
+  },
+  "TEPE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:38.629115",
+    "url": "https://conteudos.xpi.com.br/acoes/tepe/"
+  },
+  "TGBP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:39.479877",
+    "url": "https://conteudos.xpi.com.br/acoes/tgbp/"
+  },
+  "TBSP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:40.441708",
+    "url": "https://conteudos.xpi.com.br/acoes/tbsp/"
+  },
+  "TMER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:41.612172",
+    "url": "https://conteudos.xpi.com.br/acoes/tmer/"
+  },
+  "PCHS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:42.558022",
+    "url": "https://conteudos.xpi.com.br/acoes/pchs/"
+  },
+  "TSSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:43.537485",
+    "url": "https://conteudos.xpi.com.br/acoes/tssa/"
+  },
+  "RDOR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T16:56:53.946287",
+    "url": "https://conteudos.xpi.com.br/acoes/rdor3/",
+    "data_referencia": "2026-05-01"
+  },
+  "REDE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:56.108735",
+    "url": "https://conteudos.xpi.com.br/acoes/rede3/"
+  },
+  "RNEW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:56:57.592782",
+    "url": "https://conteudos.xpi.com.br/acoes/rnew3/"
+  },
+  "RVEE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T16:57:01.180876",
+    "url": "https://conteudos.xpi.com.br/acoes/rvee3/"
+  },
+  "AESL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:23:44.265294",
+    "url": "https://conteudos.xpi.com.br/acoes/aesl3/"
+  },
+  "GEPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:23:46.682684",
+    "url": "https://conteudos.xpi.com.br/acoes/gepa3/"
+  },
+  "ROMI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:23:48.752707",
+    "url": "https://conteudos.xpi.com.br/acoes/romi3/"
+  },
+  "RAIL_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:23:59.873283",
+    "url": "https://conteudos.xpi.com.br/acoes/rail3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SNSY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:02.912036",
+    "url": "https://conteudos.xpi.com.br/acoes/snsy3/"
+  },
+  "STBP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:04.005473",
+    "url": "https://conteudos.xpi.com.br/acoes/stbp11/"
+  },
+  "SMTO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:24:14.241340",
+    "url": "https://conteudos.xpi.com.br/acoes/smto3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AHEB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:17.920682",
+    "url": "https://conteudos.xpi.com.br/acoes/aheb3/"
+  },
+  "SHUL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:19.555800",
+    "url": "https://conteudos.xpi.com.br/acoes/shul3/"
+  },
+  "ASAI_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:24:27.753921",
+    "url": "https://conteudos.xpi.com.br/acoes/asai3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SEQL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:30.066280",
+    "url": "https://conteudos.xpi.com.br/acoes/seql3/"
+  },
+  "SEER_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:24:38.952358",
+    "url": "https://conteudos.xpi.com.br/acoes/seer3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SIMH_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:24:48.081361",
+    "url": "https://conteudos.xpi.com.br/acoes/simh3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SLCE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:24:56.889997",
+    "url": "https://conteudos.xpi.com.br/acoes/slce3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SOND_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:24:59.019915",
+    "url": "https://conteudos.xpi.com.br/acoes/sond3/"
+  },
+  "NEMO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:00.714891",
+    "url": "https://conteudos.xpi.com.br/acoes/nemo3/"
+  },
+  "SUZB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:25:13.897785",
+    "url": "https://conteudos.xpi.com.br/acoes/suzb3/",
+    "data_referencia": "2026-05-01"
+  },
+  "SYNE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:16.757657",
+    "url": "https://conteudos.xpi.com.br/acoes/syne3/"
+  },
+  "SHOW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:18.453238",
+    "url": "https://conteudos.xpi.com.br/acoes/show3/"
+  },
+  "TRAD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:20.071441",
+    "url": "https://conteudos.xpi.com.br/acoes/trad3/"
+  },
+  "TECN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:21.806717",
+    "url": "https://conteudos.xpi.com.br/acoes/tecn3/"
+  },
+  "TCSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:23.244989",
+    "url": "https://conteudos.xpi.com.br/acoes/tcsa3/"
+  },
+  "TGMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:24.733677",
+    "url": "https://conteudos.xpi.com.br/acoes/tgma3/"
+  },
+  "TELB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:26.046795",
+    "url": "https://conteudos.xpi.com.br/acoes/telb3/"
+  },
+  "VIVT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:25:34.269080",
+    "url": "https://conteudos.xpi.com.br/acoes/vivt3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LAND_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:36.622935",
+    "url": "https://conteudos.xpi.com.br/acoes/land3/"
+  },
+  "TXRX_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:25:38.282757",
+    "url": "https://conteudos.xpi.com.br/acoes/txrx3/"
+  },
+  "TIMS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:25:50.664119",
+    "url": "https://conteudos.xpi.com.br/acoes/tims3/",
+    "data_referencia": "2026-05-01"
+  },
+  "TOTS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:26:01.526139",
+    "url": "https://conteudos.xpi.com.br/acoes/tots3/",
+    "data_referencia": "2026-05-01"
+  },
+  "TFCO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:26:10.250939",
+    "url": "https://conteudos.xpi.com.br/acoes/tfco4/",
+    "data_referencia": "2026-05-01"
+  },
+  "TAEE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:12.628170",
+    "url": "https://conteudos.xpi.com.br/acoes/taee3/"
+  },
+  "TTEN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:26:22.255844",
+    "url": "https://conteudos.xpi.com.br/acoes/tten3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LUXM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:25.637664",
+    "url": "https://conteudos.xpi.com.br/acoes/luxm3/"
+  },
+  "AUAU_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:26:33.940628",
+    "url": "https://conteudos.xpi.com.br/acoes/auau3/",
+    "data_referencia": "2026-05-01"
+  },
+  "UCAS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:36.350429",
+    "url": "https://conteudos.xpi.com.br/acoes/ucas3/"
+  },
+  "FIQE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:26:45.859667",
+    "url": "https://conteudos.xpi.com.br/acoes/fiqe3/",
+    "data_referencia": "2026-05-01"
+  },
+  "UNIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:47.898950",
+    "url": "https://conteudos.xpi.com.br/acoes/unip3/"
+  },
+  "UQUF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:49.117252",
+    "url": "https://conteudos.xpi.com.br/acoes/uquf/"
+  },
+  "UNLC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:50.075473",
+    "url": "https://conteudos.xpi.com.br/acoes/unlc/"
+  },
+  "VACR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:51.150521",
+    "url": "https://conteudos.xpi.com.br/acoes/vacr/"
+  },
+  "VTEG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:51.913005",
+    "url": "https://conteudos.xpi.com.br/acoes/vteg/"
+  },
+  "AGAU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:53.133020",
+    "url": "https://conteudos.xpi.com.br/acoes/agau/"
+  },
+  "ZAMP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:55.581692",
+    "url": "https://conteudos.xpi.com.br/acoes/zamp/"
+  },
+  "AFLT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:57.170922",
+    "url": "https://conteudos.xpi.com.br/acoes/aflt3/"
+  },
+  "AVLL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:26:58.742884",
+    "url": "https://conteudos.xpi.com.br/acoes/avll3/"
+  },
+  "AMBP_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:27:04.193861",
+    "url": "https://conteudos.xpi.com.br/acoes/ambp3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ATED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:05.536483",
+    "url": "https://conteudos.xpi.com.br/acoes/ated3/"
+  },
+  "AZZA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:27:13.446789",
+    "url": "https://conteudos.xpi.com.br/acoes/azza3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BBSE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:15.528023",
+    "url": "https://conteudos.xpi.com.br/acoes/bbse3/"
+  },
+  "BBAS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:27:26.316712",
+    "url": "https://conteudos.xpi.com.br/acoes/bbas3/",
+    "data_referencia": "2026-05-01"
+  },
+  "BRSR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:28.577941",
+    "url": "https://conteudos.xpi.com.br/acoes/brsr3/"
+  },
+  "PINE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:30.039941",
+    "url": "https://conteudos.xpi.com.br/acoes/pine3/"
+  },
+  "BIED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:31.470754",
+    "url": "https://conteudos.xpi.com.br/acoes/bied3/"
+  },
+  "BOBR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:32.906415",
+    "url": "https://conteudos.xpi.com.br/acoes/bobr3/"
+  },
+  "BRAP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:27:34.523767",
+    "url": "https://conteudos.xpi.com.br/acoes/brap3/"
+  },
+  "BRST_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:27:43.575904",
+    "url": "https://conteudos.xpi.com.br/acoes/brst3/",
+    "data_referencia": "2026-05-01"
+  },
+  "AXIA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:27:53.487588",
+    "url": "https://conteudos.xpi.com.br/acoes/axia3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CEGR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:01.737337",
+    "url": "https://conteudos.xpi.com.br/acoes/cegr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CEED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:04.558764",
+    "url": "https://conteudos.xpi.com.br/acoes/ceed3/"
+  },
+  "MSPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:06.267143",
+    "url": "https://conteudos.xpi.com.br/acoes/mspa3/"
+  },
+  "SBSP_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:15.629678",
+    "url": "https://conteudos.xpi.com.br/acoes/sbsp3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VVEO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:25.180823",
+    "url": "https://conteudos.xpi.com.br/acoes/vveo3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ODER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:27.172749",
+    "url": "https://conteudos.xpi.com.br/acoes/oder4/"
+  },
+  "CSAN_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:33.141140",
+    "url": "https://conteudos.xpi.com.br/acoes/csan3/",
+    "data_referencia": "2026-05-01"
+  },
+  "CVCB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:35.202768",
+    "url": "https://conteudos.xpi.com.br/acoes/cvcb3/"
+  },
+  "DASA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:43.827958",
+    "url": "https://conteudos.xpi.com.br/acoes/dasa3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ECOR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:28:54.374558",
+    "url": "https://conteudos.xpi.com.br/acoes/ecor3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ELPL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:55.728978",
+    "url": "https://conteudos.xpi.com.br/acoes/elpl4/"
+  },
+  "CRPG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:28:57.182726",
+    "url": "https://conteudos.xpi.com.br/acoes/crpg3/"
+  },
+  "TUPY_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:29:05.428199",
+    "url": "https://conteudos.xpi.com.br/acoes/tupy3/",
+    "data_referencia": "2026-05-01"
+  },
+  "USIM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:29:07.329459",
+    "url": "https://conteudos.xpi.com.br/acoes/usim3/"
+  },
+  "VALE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:29:17.981480",
+    "url": "https://conteudos.xpi.com.br/acoes/vale3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VAMO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:29:28.099795",
+    "url": "https://conteudos.xpi.com.br/acoes/vamo3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VSTE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:29:30.602461",
+    "url": "https://conteudos.xpi.com.br/acoes/vste3/"
+  },
+  "VBBR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:29:39.784115",
+    "url": "https://conteudos.xpi.com.br/acoes/vbbr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VTRU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:29:41.817350",
+    "url": "https://conteudos.xpi.com.br/acoes/vtru3/"
+  },
+  "VITT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:29:51.651833",
+    "url": "https://conteudos.xpi.com.br/acoes/vitt3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VIVA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:04.990718",
+    "url": "https://conteudos.xpi.com.br/acoes/viva3/",
+    "data_referencia": "2026-05-01"
+  },
+  "VULC_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:15.279614",
+    "url": "https://conteudos.xpi.com.br/acoes/vulc3/",
+    "data_referencia": "2026-05-01"
+  },
+  "WEGE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:26.065416",
+    "url": "https://conteudos.xpi.com.br/acoes/wege3/",
+    "data_referencia": "2026-05-01"
+  },
+  "WEST_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:32.267719",
+    "url": "https://conteudos.xpi.com.br/acoes/west3/",
+    "data_referencia": "2026-05-01"
+  },
+  "MWET_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:30:34.447317",
+    "url": "https://conteudos.xpi.com.br/acoes/mwet3/"
+  },
+  "WIZC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:30:35.911303",
+    "url": "https://conteudos.xpi.com.br/acoes/wizc3/"
+  },
+  "WLMM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:30:37.756208",
+    "url": "https://conteudos.xpi.com.br/acoes/wlmm3/"
+  },
+  "YDUQ_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:46.234827",
+    "url": "https://conteudos.xpi.com.br/acoes/yduq3/",
+    "data_referencia": "2026-05-01"
+  },
+  "EMBJ_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:30:56.548811",
+    "url": "https://conteudos.xpi.com.br/acoes/embj3/",
+    "data_referencia": "2026-05-01"
+  },
+  "FLCL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:30:58.009206",
+    "url": "https://conteudos.xpi.com.br/acoes/flcl3/"
+  },
+  "ETER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:00.602120",
+    "url": "https://conteudos.xpi.com.br/acoes/eter3/"
+  },
+  "VSPT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:02.121208",
+    "url": "https://conteudos.xpi.com.br/acoes/vspt3/"
+  },
+  "FRAS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:31:11.303278",
+    "url": "https://conteudos.xpi.com.br/acoes/fras3/",
+    "data_referencia": "2026-05-01"
+  },
+  "HBSA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:31:22.756979",
+    "url": "https://conteudos.xpi.com.br/acoes/hbsa3/",
+    "data_referencia": "2026-05-01"
+  },
+  "HOOT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:24.953169",
+    "url": "https://conteudos.xpi.com.br/acoes/hoot3/"
+  },
+  "IGTI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:26.407946",
+    "url": "https://conteudos.xpi.com.br/acoes/igti3/"
+  },
+  "INTB_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:31:35.114275",
+    "url": "https://conteudos.xpi.com.br/acoes/intb3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ITUB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:37.136193",
+    "url": "https://conteudos.xpi.com.br/acoes/itub3/"
+  },
+  "JOPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:38.773288",
+    "url": "https://conteudos.xpi.com.br/acoes/jopa3/"
+  },
+  "LAVV_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:31:48.487542",
+    "url": "https://conteudos.xpi.com.br/acoes/lavv3/",
+    "data_referencia": "2026-05-01"
+  },
+  "LOGN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:31:50.534331",
+    "url": "https://conteudos.xpi.com.br/acoes/logn3/"
+  },
+  "MDIA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:31:59.007839",
+    "url": "https://conteudos.xpi.com.br/acoes/mdia3/",
+    "data_referencia": "2026-05-01"
+  },
+  "ESTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:01.519785",
+    "url": "https://conteudos.xpi.com.br/acoes/estr3/"
+  },
+  "GOAU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:03.668111",
+    "url": "https://conteudos.xpi.com.br/acoes/goau3/"
+  },
+  "MMAQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:05.101898",
+    "url": "https://conteudos.xpi.com.br/acoes/mmaq3/"
+  },
+  "MNPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:06.728444",
+    "url": "https://conteudos.xpi.com.br/acoes/mnpr3/"
+  },
+  "MRVE_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:32:16.508704",
+    "url": "https://conteudos.xpi.com.br/acoes/mrve3/",
+    "data_referencia": "2026-05-01"
+  },
+  "NEXP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:18.608353",
+    "url": "https://conteudos.xpi.com.br/acoes/nexp3/"
+  },
+  "ONCO_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:32:27.741196",
+    "url": "https://conteudos.xpi.com.br/acoes/onco3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PMAM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:30.770768",
+    "url": "https://conteudos.xpi.com.br/acoes/pmam3/"
+  },
+  "PETR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:32:41.730821",
+    "url": "https://conteudos.xpi.com.br/acoes/petr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "PRNR_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:32:51.769135",
+    "url": "https://conteudos.xpi.com.br/acoes/prnr3/",
+    "data_referencia": "2026-05-01"
+  },
+  "RAPT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:54.833824",
+    "url": "https://conteudos.xpi.com.br/acoes/rapt3/"
+  },
+  "RCSL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:56.874152",
+    "url": "https://conteudos.xpi.com.br/acoes/rcsl3/"
+  },
+  "RPMG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:32:58.713624",
+    "url": "https://conteudos.xpi.com.br/acoes/rpmg3/"
+  },
+  "RSID_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:00.273797",
+    "url": "https://conteudos.xpi.com.br/acoes/rsid3/"
+  },
+  "SCAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:01.614181",
+    "url": "https://conteudos.xpi.com.br/acoes/scar3/"
+  },
+  "SMFT_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:33:10.058023",
+    "url": "https://conteudos.xpi.com.br/acoes/smft3/",
+    "data_referencia": "2026-05-01"
+  },
+  "TASA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:12.196759",
+    "url": "https://conteudos.xpi.com.br/acoes/tasa3/"
+  },
+  "TKNO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:13.512334",
+    "url": "https://conteudos.xpi.com.br/acoes/tkno3/"
+  },
+  "TPIS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:15.061703",
+    "url": "https://conteudos.xpi.com.br/acoes/tpis3/"
+  },
+  "TRIS_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:33:24.472522",
+    "url": "https://conteudos.xpi.com.br/acoes/tris3/",
+    "data_referencia": "2026-05-01"
+  },
+  "UGPA_xp_research_v2": {
+    "_status": "ok",
+    "ts": "2026-05-01T17:33:34.361251",
+    "url": "https://conteudos.xpi.com.br/acoes/ugpa3/",
+    "data_referencia": "2026-05-01"
+  },
+  "WHRL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:36.930588",
+    "url": "https://conteudos.xpi.com.br/acoes/whrl3/"
+  },
+  "AERI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:39.967170",
+    "url": "https://conteudos.xpi.com.br/acoes/aeri3/"
+  },
+  "ADSH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:40.916739",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/adsh11/"
+  },
+  "AFHI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:41.828565",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/afhi11/"
+  },
+  "AFHF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:42.763700",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/afhf11/"
+  },
+  "ATWN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:43.846849",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/atwn/"
+  },
+  "AJFI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:44.626580",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ajfi11/"
+  },
+  "ALZC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:45.582456",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/alzc11/"
+  },
+  "MTOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:46.373881",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mtof/"
+  },
+  "ALZR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:47.391825",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/alzr11/"
+  },
+  "AURB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:48.730070",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/aurb11/"
+  },
+  "APXM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:49.657383",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/apxm11/"
+  },
+  "APXU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:50.583683",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/apxu11/"
+  },
+  "AIEC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:51.563034",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/aiec11/"
+  },
+  "AVUR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:52.440213",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/avur11/"
+  },
+  "AROA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:53.367359",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/aroa11/"
+  },
+  "EIRA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:54.181108",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/eira11/"
+  },
+  "ARTE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:55.115867",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/arte11/"
+  },
+  "ARXD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:55.910580",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/arxd11/"
+  },
+  "AZPE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:56.878816",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/azpe/"
+  },
+  "AZPL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:57.927808",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/azpl11/"
+  },
+  "AZSG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:33:58.991480",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/azsg/"
+  },
+  "CEBB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:00.000466",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cebb/"
+  },
+  "BCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:01.178520",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bcri11/"
+  },
+  "BNFS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:02.257305",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bnfs11/"
+  },
+  "BTML_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:03.166469",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btml11/"
+  },
+  "BZEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:03.977892",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bzel/"
+  },
+  "BPDR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:05.132151",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bpdr/"
+  },
+  "BPLC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:05.939012",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bplc/"
+  },
+  "BPMW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:06.957006",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bpmw/"
+  },
+  "BBFO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:08.220685",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bbfo11/"
+  },
+  "BBFI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:09.180616",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bbfi11/"
+  },
+  "BBIG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:10.115109",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bbig11/"
+  },
+  "BBRC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:11.184027",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bbrc11/"
+  },
+  "BINR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:12.046065",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/binr/"
+  },
+  "BFCC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:13.032912",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bfcc11/"
+  },
+  "BGRB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:13.785387",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bgrb11/"
+  },
+  "BGRJ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:14.763981",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bgrj/"
+  },
+  "BLOG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:15.627129",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/blog11/"
+  },
+  "BLMG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:16.456872",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/blmg11/"
+  },
+  "BMLC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:17.379634",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bmlc11/"
+  },
+  "BRSE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:18.352690",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brse/"
+  },
+  "BCIA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:19.323331",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bcia11/"
+  },
+  "BVAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:20.140977",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bvar11/"
+  },
+  "CARE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:21.090430",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/care11/"
+  },
+  "FATN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:22.050175",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fatn11/"
+  },
+  "RTEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:23.302827",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rtel/"
+  },
+  "BRCT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:24.449941",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brct/"
+  },
+  "BRCD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:25.373152",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brcd/"
+  },
+  "BRCO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:26.376274",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brco11/"
+  },
+  "BICE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:27.278816",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bice11/"
+  },
+  "BIME_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:28.223784",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bime11/"
+  },
+  "BRIM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:29.149175",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brim11/"
+  },
+  "BRIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:30.144947",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brip11/"
+  },
+  "BIPD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:31.142786",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bipd11/"
+  },
+  "BIPE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:31.969920",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bipe11/"
+  },
+  "MCMV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:32.884206",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mcmv/"
+  },
+  "BROF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:33.831978",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brof11/"
+  },
+  "BETW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:34.883836",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/betw/"
+  },
+  "LLAO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:35.826130",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/llao11/"
+  },
+  "BTHR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:36.720454",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bthr/"
+  },
+  "BTHI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:37.848755",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bthi11/"
+  },
+  "BRCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:38.840859",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brcr11/"
+  },
+  "BTCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:39.752200",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btci11/"
+  },
+  "BTLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:40.683664",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btlg11/"
+  },
+  "BTHF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:41.544969",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bthf11/"
+  },
+  "BPML_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:42.414753",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bpml11/"
+  },
+  "BTYU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:43.538012",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btyu11/"
+  },
+  "BTWR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:44.431420",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btwr11/"
+  },
+  "BTSI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:46.153825",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/btsi11/"
+  },
+  "CXCO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:48.030050",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxco11/"
+  },
+  "CRFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:49.328859",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/crff11/"
+  },
+  "CXRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:50.383576",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxri11/"
+  },
+  "CCME_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:51.310584",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ccme11/"
+  },
+  "CCVA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:52.270626",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ccva11/"
+  },
+  "CPUR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:53.060989",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cpur11/"
+  },
+  "CPLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:54.017693",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cplg11/"
+  },
+  "CPOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:54.957600",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cpof11/"
+  },
+  "CPTS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:55.784000",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cpts11/"
+  },
+  "CPSH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:56.691257",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cpsh11/"
+  },
+  "CACR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:57.743128",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cacr11/"
+  },
+  "CBOP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:58.593592",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cbop11/"
+  },
+  "BLCA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:34:59.639613",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/blca11/"
+  },
+  "CVFL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:00.569627",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cvfl/"
+  },
+  "CNES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:01.501513",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cnes11/"
+  },
+  "CDHY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:02.505004",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cdhy/"
+  },
+  "CTXT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:03.239244",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ctxt11/"
+  },
+  "CENU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:04.086565",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cenu11/"
+  },
+  "CFII_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:04.888805",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cfii11/"
+  },
+  "CJCT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:05.846051",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cjct11/"
+  },
+  "CLSM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:06.725351",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/clsm/"
+  },
+  "CIXM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:07.818907",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cixm/"
+  },
+  "CIXF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:08.686248",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cixf11/"
+  },
+  "PDBM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:09.802676",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pdbm11/"
+  },
+  "CLIN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:10.686317",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/clin11/"
+  },
+  "CSMC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:11.684769",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/csmc/"
+  },
+  "RENV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:12.670945",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/renv11/"
+  },
+  "IBCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:13.914024",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ibcr11/"
+  },
+  "CVPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:14.980959",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cvpr/"
+  },
+  "CYCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:15.931772",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cycr11/"
+  },
+  "CYLD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:16.984258",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cyld11/"
+  },
+  "DAMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:17.921697",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dama11/"
+  },
+  "DAYM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:19.231599",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/daym11/"
+  },
+  "ASRF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:20.133044",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/asrf11/"
+  },
+  "DLMT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:21.061941",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dlmt/"
+  },
+  "DPRO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:21.962221",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dpro11/"
+  },
+  "DEVA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:23.107684",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/deva11/"
+  },
+  "BRHT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:23.958785",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brht/"
+  },
+  "DAMT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:24.780201",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/damt11/"
+  },
+  "DOVL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:26.028549",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dovl11/"
+  },
+  "EDGE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:26.999232",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/edge11/"
+  },
+  "EMET_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:27.919937",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/emet11/"
+  },
+  "EGYR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:28.982726",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/egyr11/"
+  },
+  "EQIR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:29.990564",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/eqir11/"
+  },
+  "ERCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:30.734723",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ercr/"
+  },
+  "ERPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:32.063031",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/erpa11/"
+  },
+  "KEVE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:32.947999",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/keve11/"
+  },
+  "EXES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:33.818850",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/exes11/"
+  },
+  "FLCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:35.324265",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/flcr11/"
+  },
+  "VRTA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:36.416544",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vrta11/"
+  },
+  "VRTM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:37.549254",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vrtm11/"
+  },
+  "FTRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:38.426974",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ftre/"
+  },
+  "FLMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:39.423698",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/flma11/"
+  },
+  "EGDB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:40.344838",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/egdb11/"
+  },
+  "ELDO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:41.320381",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/eldo11/"
+  },
+  "EURO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:42.156449",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/euro11/"
+  },
+  "HYPI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:43.466428",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hypi11/"
+  },
+  "HRES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:44.659781",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hres11/"
+  },
+  "FIIB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:45.522436",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fiib11/"
+  },
+  "FMOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:46.393189",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fmof11/"
+  },
+  "OPTM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:47.411887",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/optm/"
+  },
+  "FRBC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:48.385779",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/frbc/"
+  },
+  "ALMI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:49.602706",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/almi11/"
+  },
+  "FLNR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:50.624082",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/flnr/"
+  },
+  "HLMB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:51.779030",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hlmb/"
+  },
+  "KFOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:52.907156",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kfof11/"
+  },
+  "DVFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:53.721866",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dvff11/"
+  },
+  "ANCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:54.675092",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ancr11/"
+  },
+  "FAED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:55.706288",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/faed11/"
+  },
+  "FCFL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:56.784126",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fcfl11/"
+  },
+  "CEOC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:57.906285",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ceoc11/"
+  },
+  "FAMB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:58.870270",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/famb11/"
+  },
+  "EDGA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:35:59.945616",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/edga11/"
+  },
+  "FYTO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:00.903507",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fyto11/"
+  },
+  "HCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:01.780282",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hcri11/"
+  },
+  "NSLU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:03.028477",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/nslu11/"
+  },
+  "MAXR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:03.909770",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/maxr11/"
+  },
+  "PQDP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:05.093503",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pqdp11/"
+  },
+  "RBRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:06.136434",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbri11/"
+  },
+  "RDIV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:07.124371",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rdiv11/"
+  },
+  "RBRR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:07.961281",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrr11/"
+  },
+  "RECR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:08.808317",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/recr11/"
+  },
+  "RECT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:09.686639",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rect11/"
+  },
+  "SHDP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:10.986058",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/shdp11/"
+  },
+  "TRNT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:11.832432",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trnt11/"
+  },
+  "APXR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:12.808249",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/apxr11/"
+  },
+  "BRCQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:13.967428",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/brcq/"
+  },
+  "CXAG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:14.984554",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxag11/"
+  },
+  "CXCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:15.816554",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxci11/"
+  },
+  "CXCE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:16.724002",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxce11/"
+  },
+  "CXTL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:17.723481",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/cxtl11/"
+  },
+  "IDUA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:18.822180",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/idua/"
+  },
+  "LKDV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:19.814373",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lkdv11/"
+  },
+  "EDFO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:21.213145",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/edfo11/"
+  },
+  "NVHO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:22.272015",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/nvho11/"
+  },
+  "GTWR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:23.007513",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gtwr11/"
+  },
+  "HBCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:24.093841",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hbcr11/"
+  },
+  "HUCG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:25.109101",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hucg11/"
+  },
+  "HUSC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:26.069623",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/husc11/"
+  },
+  "HOSI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:26.837204",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hosi11/"
+  },
+  "FINF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:27.745681",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/finf/"
+  },
+  "BLUE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:28.629143",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/blue11/"
+  },
+  "MMPD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:29.451487",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mmpd11/"
+  },
+  "MCCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:30.300241",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mcci11/"
+  },
+  "WTSP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:31.388210",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/wtsp11/"
+  },
+  "PABY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:32.365859",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/paby11/"
+  },
+  "VTPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:33.466774",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vtpa/"
+  },
+  "FPNG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:34.341919",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fpng11/"
+  },
+  "VTPL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:35.245261",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vtpl11/"
+  },
+  "ESTQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:36.080558",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/estq/"
+  },
+  "VPSI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:37.153031",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vpsi11/"
+  },
+  "RBRY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:38.074324",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbry11/"
+  },
+  "PULV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:38.794115",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pulv/"
+  },
+  "RBRP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:40.102342",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrp11/"
+  },
+  "RELG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:41.023965",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/relg11/"
+  },
+  "RZTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:41.810085",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rztr11/"
+  },
+  "ROOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:43.612235",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/roof11/"
+  },
+  "HOMS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:44.723098",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/homs11/"
+  },
+  "FISC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:45.484815",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fisc11/"
+  },
+  "SAIC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:46.415918",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/saic11/"
+  },
+  "SMRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:47.277536",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/smre11/"
+  },
+  "SOFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:48.087833",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/soff11/"
+  },
+  "SPVJ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:49.004687",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spvj/"
+  },
+  "TGAR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:49.890878",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tgar11/"
+  },
+  "TRCO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:50.879696",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trco11/"
+  },
+  "TRUE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:51.822916",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/true11/"
+  },
+  "LVBI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:52.609663",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lvbi11/"
+  },
+  "PVBI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:53.493064",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pvbi11/"
+  },
+  "VERE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:54.757581",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vere11/"
+  },
+  "FIVN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:55.649228",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fivn11/"
+  },
+  "VSHO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:56.602224",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vsho11/"
+  },
+  "XPRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:57.552816",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpre/"
+  },
+  "BMLT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:58.614140",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bmlt11/"
+  },
+  "FIIC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:36:59.522840",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fiic/"
+  },
+  "BSLT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:00.631823",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bslt11/"
+  },
+  "TCIN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:01.416521",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tcin11/"
+  },
+  "GCDL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:02.301518",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gcdl11/"
+  },
+  "GSRF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:03.141437",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gsrf11/"
+  },
+  "GFDL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:03.920846",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gfdl11/"
+  },
+  "GLPF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:04.763124",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/glpf11/"
+  },
+  "GLCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:05.610801",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/glcr11/"
+  },
+  "GCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:07.048150",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gcri11/"
+  },
+  "GCOI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:07.985717",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gcoi11/"
+  },
+  "GZIT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:08.738289",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gzit11/"
+  },
+  "FIGS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:09.480553",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/figs11/"
+  },
+  "GSFI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:10.229336",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gsfi11/"
+  },
+  "VXXV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:11.214640",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vxxv11/"
+  },
+  "GLOG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:11.972788",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/glog11/"
+  },
+  "ABCP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:12.918971",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/abcp11/"
+  },
+  "RCFA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:14.039214",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rcfa11/"
+  },
+  "GAME_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:15.237327",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/game11/"
+  },
+  "GARE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:16.203699",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/gare11/"
+  },
+  "HABT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:17.189604",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/habt11/"
+  },
+  "ATCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:17.906281",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/atcr/"
+  },
+  "HCTB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:18.783460",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hctb/"
+  },
+  "AERO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:19.787746",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/aero11/"
+  },
+  "HCTR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:20.621886",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hctr11/"
+  },
+  "HCST_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:21.556665",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hcst11/"
+  },
+  "HCHG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:22.773418",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hchg11/"
+  },
+  "HAAA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:23.668127",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/haaa11/"
+  },
+  "ATSA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:24.544619",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/atsa11/"
+  },
+  "HGBL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:25.458360",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgbl11/"
+  },
+  "HGBS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:26.380145",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgbs11/"
+  },
+  "HDEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:27.102086",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hdel11/"
+  },
+  "FLRP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:27.883557",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/flrp11/"
+  },
+  "HJCT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:28.737267",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hjct11/"
+  },
+  "HLOG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:30.239120",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hlog11/"
+  },
+  "HOFC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:31.185175",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hofc11/"
+  },
+  "HDOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:31.962418",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hdof11/"
+  },
+  "HRDF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:32.936886",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hrdf11/"
+  },
+  "HREC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:34.083668",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hrec11/"
+  },
+  "SEED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:35.077580",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/seed11/"
+  },
+  "HPDP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:36.076941",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hpdp11/"
+  },
+  "HFOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:37.112167",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hfof11/"
+  },
+  "YEES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:38.074076",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/yees11/"
+  },
+  "HGIC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:39.057821",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgic11/"
+  },
+  "HIRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:39.938934",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hire11/"
+  },
+  "HILG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:40.911384",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hilg11/"
+  },
+  "HTMX_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:41.719733",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/htmx11/"
+  },
+  "HSAF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:42.572071",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hsaf11/"
+  },
+  "HSLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:43.469019",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hslg11/"
+  },
+  "HSML_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:44.308622",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hsml11/"
+  },
+  "HSRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:45.063746",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hsre11/"
+  },
+  "HUSI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:46.035270",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/husi11/"
+  },
+  "IVCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:46.980582",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ivci/"
+  },
+  "GRUL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:47.917980",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/grul11/"
+  },
+  "ICNE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:48.806392",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/icne11/"
+  },
+  "IMMB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:49.815575",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/immb11/"
+  },
+  "INDE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:50.942985",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/inde11/"
+  },
+  "INLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:51.795991",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/inlg11/"
+  },
+  "INRD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:52.659507",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/inrd11/"
+  },
+  "ITIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:53.673263",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/itip11/"
+  },
+  "ITIT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:54.936701",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/itit11/"
+  },
+  "IBBP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:55.835092",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ibbp11/"
+  },
+  "XPIN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:56.854674",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpin11/"
+  },
+  "IRIM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:57.801672",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/irim11/"
+  },
+  "ICDI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:58.859224",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/icdi/"
+  },
+  "ICRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:37:59.710687",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/icri11/"
+  },
+  "ILOG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:00.639868",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ilog/"
+  },
+  "TMPS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:01.629158",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tmps11/"
+  },
+  "ITRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:02.632967",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/itri11/"
+  },
+  "JCDB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:03.577180",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jcdb/"
+  },
+  "JCDA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:04.586804",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jcda/"
+  },
+  "JASC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:05.466515",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jasc11/"
+  },
+  "VJFD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:06.418397",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vjfd11/"
+  },
+  "JFLL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:07.370751",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jfll11/"
+  },
+  "JCCJ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:08.238124",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jccj11/"
+  },
+  "JPPA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:09.220226",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jppa11/"
+  },
+  "JSAF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:10.206636",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jsaf11/"
+  },
+  "JSRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:11.260019",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jsre11/"
+  },
+  "JSCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:12.163281",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jscr11/"
+  },
+  "JTPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:12.963538",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/jtpr/"
+  },
+  "BGS1_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:14.003008",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/bgs1/"
+  },
+  "KISU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:14.954118",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kisu11/"
+  },
+  "KIVO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:15.866318",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kivo11/"
+  },
+  "KRES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:16.975593",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kres/"
+  },
+  "KCRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:17.830021",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kcre11/"
+  },
+  "KNGR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:19.449648",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kngr/"
+  },
+  "KGUJ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:20.810920",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kguj/"
+  },
+  "KLOG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:21.750822",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/klog/"
+  },
+  "KDLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:22.625065",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kdlg/"
+  },
+  "KFEN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:23.650990",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kfen11/"
+  },
+  "KNHF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:24.524083",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knhf11/"
+  },
+  "KNHY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:25.837759",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knhy11/"
+  },
+  "KNRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:27.210987",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knre11/"
+  },
+  "KNIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:28.199379",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knip11/"
+  },
+  "KOIM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:29.569836",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/koim/"
+  },
+  "KORE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:30.673662",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kore11/"
+  },
+  "KNPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:31.512623",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knpr/"
+  },
+  "KPMR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:32.468496",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kpmr/"
+  },
+  "KPRP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:33.431020",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kprp/"
+  },
+  "KNRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:34.364611",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knri11/"
+  },
+  "KNCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:35.750021",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/kncr11/"
+  },
+  "KNSC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:36.913995",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knsc11/"
+  },
+  "KNUQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:37.932597",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/knuq11/"
+  },
+  "LMAI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:38.764965",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lmai11/"
+  },
+  "LPLP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:40.097489",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lplp11/"
+  },
+  "SLDZ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:41.008642",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sldz/"
+  },
+  "LRED_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:42.328522",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lred11/"
+  },
+  "LSOI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:43.358673",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lsoi11/"
+  },
+  "LSII_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:44.281339",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lsii/"
+  },
+  "LSOP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:45.266491",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lsop11/"
+  },
+  "LRDI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:46.137851",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lrdi11/"
+  },
+  "LASC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:47.123273",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/lasc11/"
+  },
+  "LIFE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:47.885661",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/life11/"
+  },
+  "LOFT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:50.507610",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/loft/"
+  },
+  "MAGM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:51.403737",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/magm11/"
+  },
+  "MANA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:52.264896",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mana11/"
+  },
+  "MMVE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:53.141033",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mmve11/"
+  },
+  "MCLO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:53.959728",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mclo11/"
+  },
+  "MCRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:54.985594",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mcre11/"
+  },
+  "MXRF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:55.900641",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mxrf11/"
+  },
+  "MCEM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:57.079920",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mcem11/"
+  },
+  "MFII_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:58.119050",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mfii11/"
+  },
+  "MIDW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:59.188895",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/midw11/"
+  },
+  "MGHT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:38:59.950727",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mght11/"
+  },
+  "MGRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:00.965246",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mgri/"
+  },
+  "MOSO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:01.877476",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/moso/"
+  },
+  "SHOP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:02.813710",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/shop11/"
+  },
+  "MOFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:03.799528",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/moff/"
+  },
+  "NCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:04.555580",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ncri11/"
+  },
+  "NAVT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:05.404813",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/navt11/"
+  },
+  "APTO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:06.350237",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/apto11/"
+  },
+  "EAGL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:07.369719",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/eagl11/"
+  },
+  "NEWL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:08.505866",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/newl11/"
+  },
+  "NEWU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:09.302715",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/newu11/"
+  },
+  "NMKS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:10.233179",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/nmks11/"
+  },
+  "NVIF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:11.116580",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/nvif/"
+  },
+  "OCRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:11.970899",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ocre11/"
+  },
+  "ONDA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:12.951961",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/onda11/"
+  },
+  "ARRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:13.780290",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/arri11/"
+  },
+  "OBAL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:14.761408",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/obal11/"
+  },
+  "FTCE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:15.911922",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ftce11/"
+  },
+  "OUJP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:16.730607",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/oujp11/"
+  },
+  "OXRL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:17.695971",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/oxrl11/"
+  },
+  "PNCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:18.643265",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pncr11/"
+  },
+  "PNDL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:19.744707",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pndl11/"
+  },
+  "PNLM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:20.540333",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pnlm/"
+  },
+  "PNPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:21.501036",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pnpr11/"
+  },
+  "PNRC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:22.584428",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pnrc11/"
+  },
+  "PMIS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:23.669049",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pmis11/"
+  },
+  "VTVI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:24.661889",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vtvi/"
+  },
+  "PQAG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:25.638999",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pqag11/"
+  },
+  "PATA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:26.714423",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pata11/"
+  },
+  "PATB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:27.503516",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/patb/"
+  },
+  "PCIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:28.433493",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pcip11/"
+  },
+  "PATC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:29.479479",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/patc11/"
+  },
+  "HGRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:30.503287",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgre11/"
+  },
+  "HGLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:31.541095",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hglg11/"
+  },
+  "PLAG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:32.402624",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/plag11/"
+  },
+  "PATL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:33.255100",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/patl11/"
+  },
+  "RBRL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:34.040008",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrl11/"
+  },
+  "PMLL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:34.894607",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pmll11/"
+  },
+  "HGPO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:35.683951",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgpo11/"
+  },
+  "HGCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:36.620196",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgcr11/"
+  },
+  "VCRR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:37.585080",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vcrr11/"
+  },
+  "HGRU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:38.444917",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/hgru11/"
+  },
+  "PSEC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:39.374285",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/psec11/"
+  },
+  "PEMA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:40.914227",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pema11/"
+  },
+  "PMRL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:41.810923",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pmrl11/"
+  },
+  "PRSN_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:42.709755",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/prsn11/"
+  },
+  "PORD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:43.512720",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pord11/"
+  },
+  "PLRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:44.421896",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/plri11/"
+  },
+  "PCAS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:45.237335",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pcas/"
+  },
+  "PRSV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:46.186753",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/prsv11/"
+  },
+  "TSER_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:47.055462",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tser11/"
+  },
+  "FPAB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:48.060854",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fpab11/"
+  },
+  "PBLV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:48.931529",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pblv/"
+  },
+  "QTZD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:49.914253",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/qtzd/"
+  },
+  "RZZV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:50.907874",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzzv11/"
+  },
+  "RZZI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:51.753177",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzzi11/"
+  },
+  "RZZR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:52.636113",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzzr11/"
+  },
+  "RBDS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:53.502903",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbds11/"
+  },
+  "RSPD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:54.398847",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rspd11/"
+  },
+  "RBIR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:55.275880",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbir11/"
+  },
+  "RFOF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:56.325557",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rfof11/"
+  },
+  "RBLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:57.137156",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rblg11/"
+  },
+  "FIIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:58.285822",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fiip11/"
+  },
+  "RBRD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:39:59.428488",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrd11/"
+  },
+  "RBTS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:00.269299",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbts11/"
+  },
+  "DRIM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:01.244913",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/drim/"
+  },
+  "MTES_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:02.679816",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/mtes/"
+  },
+  "REME_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:03.747665",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/reme/"
+  },
+  "RCFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:04.588127",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rcff11/"
+  },
+  "RDCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:05.389428",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rdci/"
+  },
+  "RDLI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:06.331863",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rdli11/"
+  },
+  "SHIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:07.257157",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ship/"
+  },
+  "RBRX_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:08.047861",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrx11/"
+  },
+  "RPRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:08.908154",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rpri11/"
+  },
+  "RBRK_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:09.954177",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrk11/"
+  },
+  "TPOS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:10.993176",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tpos/"
+  },
+  "TINF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:11.963684",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tinf/"
+  },
+  "TOPP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:12.994784",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/topp11/"
+  },
+  "RINV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:14.074306",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rinv11/"
+  },
+  "RCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:14.964452",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rcri11/"
+  },
+  "RECD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:15.976731",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/recd11/"
+  },
+  "RMBS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:16.831771",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rmbs11/"
+  },
+  "RECM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:17.671941",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/recm11/"
+  },
+  "RBHG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:18.629176",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbhg11/"
+  },
+  "RBHY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:19.447396",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbhy11/"
+  },
+  "RBFY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:20.365750",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbfy11/"
+  },
+  "RBFM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:21.178703",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbfm11/"
+  },
+  "RBOP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:22.045945",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbop11/"
+  },
+  "RCRB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:22.989879",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rcrb11/"
+  },
+  "RBRS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:24.006855",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbrs11/"
+  },
+  "RBVA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:24.940707",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rbva11/"
+  },
+  "RNGO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:25.934128",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rngo11/"
+  },
+  "FRRE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:26.899727",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/frre/"
+  },
+  "RZAK_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:27.931783",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzak11/"
+  },
+  "RZAT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:29.037933",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzat11/"
+  },
+  "RZLC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:29.886906",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rzlc11/"
+  },
+  "RJDA_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:30.864548",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/rjda11/"
+  },
+  "SAPI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:31.732976",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sapi11/"
+  },
+  "FISD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:32.596192",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fisd11/"
+  },
+  "SCPF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:33.375864",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/scpf11/"
+  },
+  "SEQR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:34.452479",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/seqr11/"
+  },
+  "SHPH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:35.666833",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/shph11/"
+  },
+  "SHPP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:36.797408",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/shpp11/"
+  },
+  "WPLZ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:37.975956",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/wplz11/"
+  },
+  "REIT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:39.317528",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/reit11/"
+  },
+  "SJAU_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:40.689338",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sjau11/"
+  },
+  "SOLR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:41.617632",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/solr11/"
+  },
+  "SPTW_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:42.349654",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sptw11/"
+  },
+  "SPAF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:43.576655",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spaf/"
+  },
+  "LTMT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:44.554022",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ltmt11/"
+  },
+  "DVLP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:45.413979",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dvlp11/"
+  },
+  "DVLT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:46.504262",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/dvlt11/"
+  },
+  "PMFO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:47.469632",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/pmfo11/"
+  },
+  "SPGM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:48.401644",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spgm11/"
+  },
+  "SPG2_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:49.450074",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spg2/"
+  },
+  "SPXM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:50.393358",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spxm/"
+  },
+  "SPXL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:51.362071",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spxl/"
+  },
+  "SPXG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:52.223724",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spxg/"
+  },
+  "SPXS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:53.134289",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spxs11/"
+  },
+  "SPXT_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:53.967108",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spxt/"
+  },
+  "STRX_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:54.998468",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/strx11/"
+  },
+  "STYI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:55.893856",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/styi11/"
+  },
+  "SURE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:57.100426",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sure/"
+  },
+  "SNEL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:58.075095",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/snel11/"
+  },
+  "SNFF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:58.888845",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/snff11/"
+  },
+  "SNLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:40:59.834368",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/snlg11/"
+  },
+  "SNME_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:00.846478",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/snme11/"
+  },
+  "SNCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:01.935710",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/snci11/"
+  },
+  "SPMO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:02.938569",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spmo11/"
+  },
+  "TELD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:03.882007",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/teld/"
+  },
+  "TELM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:04.789863",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/telm11/"
+  },
+  "TEPP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:05.701663",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tepp11/"
+  },
+  "TRBL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:06.611003",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trbl11/"
+  },
+  "NAUI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:07.515308",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/naui11/"
+  },
+  "TRPL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:08.367378",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trpl11/"
+  },
+  "TVOI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:09.279284",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tvoi/"
+  },
+  "TIOM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:10.203114",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tiom/"
+  },
+  "TVRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:11.098971",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tvri11/"
+  },
+  "VOTS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:11.952399",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vots11/"
+  },
+  "TJKB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:12.893283",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tjkb11/"
+  },
+  "TORD_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:13.833582",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tord11/"
+  },
+  "TSNC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:14.974041",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tsnc11/"
+  },
+  "TCPF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:15.842152",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/tcpf/"
+  },
+  "TRXY_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:16.710988",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trxy11/"
+  },
+  "TRXF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:17.714874",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trxf11/"
+  },
+  "TRXB_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:18.675201",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/trxb11/"
+  },
+  "URHF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:19.598558",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/urhf11/"
+  },
+  "URPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:20.549279",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/urpr11/"
+  },
+  "VVCO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:21.532831",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vvco11/"
+  },
+  "VVMR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:22.504817",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vvmr11/"
+  },
+  "VPPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:23.562868",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vppr11/"
+  },
+  "VVCR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:24.476016",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vvcr11/"
+  },
+  "VVRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:25.272046",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vvri11/"
+  },
+  "VGRM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:26.807546",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vgrm/"
+  },
+  "VGIR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:27.834751",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vgir11/"
+  },
+  "VGIP_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:28.693447",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vgip11/"
+  },
+  "VGII_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:29.847624",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vgii11/"
+  },
+  "VGHF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:30.980098",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vghf11/"
+  },
+  "VGRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:31.922972",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vgri11/"
+  },
+  "BLMO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:32.917841",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/blmo11/"
+  },
+  "VCJR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:33.826300",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vcjr11/"
+  },
+  "VLJS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:34.745724",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vljs/"
+  },
+  "VNSS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:35.648655",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vnss/"
+  },
+  "SALI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:36.670896",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/sali/"
+  },
+  "VCTH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:37.542842",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vcth11/"
+  },
+  "VSLH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:38.452669",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vslh11/"
+  },
+  "FVPQ_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:39.409586",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/fvpq11/"
+  },
+  "VIDS_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:40.413298",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vids/"
+  },
+  "VDSV_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:42.085132",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vdsv/"
+  },
+  "VCRI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:43.186297",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vcri11/"
+  },
+  "VIUR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:44.044991",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/viur11/"
+  },
+  "VILG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:45.078831",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vilg11/"
+  },
+  "VIMO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:46.205432",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vimo/"
+  },
+  "VINO_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:47.046619",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/vino11/"
+  },
+  "VIOL_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:47.885888",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/viol/"
+  },
+  "VISC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:49.064936",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/visc11/"
+  },
+  "SPDE_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:50.001803",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/spde11/"
+  },
+  "WHGR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:50.909380",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/whgr11/"
+  },
+  "XLPR_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:51.816014",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xlpr11/"
+  },
+  "XPCM_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:52.852715",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpcm11/"
+  },
+  "XPCI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:53.883298",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpci11/"
+  },
+  "XPLG_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:54.835591",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xplg11/"
+  },
+  "XPML_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:55.802681",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpml11/"
+  },
+  "XPSF_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:56.918005",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/xpsf11/"
+  },
+  "YUFI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:57.917008",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/yufi11/"
+  },
+  "ZAGH_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:41:58.997841",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/zagh11/"
+  },
+  "GGRC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:42:00.152908",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/ggrc11/"
+  },
+  "ZAVC_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:42:01.258098",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/zavc11/"
+  },
+  "ZAVI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:42:02.440492",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/zavi11/"
+  },
+  "ZIFI_xp_research_v2": {
+    "_status": "sem_dados",
+    "ts": "2026-05-01T17:42:03.508456",
+    "url": "https://conteudos.xpi.com.br/fundos-imobiliarios/zifi11/"
   }
 }

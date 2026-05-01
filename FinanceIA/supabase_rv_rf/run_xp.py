@@ -12,7 +12,7 @@ import json
 import sys
 import time
 import traceback
-from datetime import datetime
+from datetime import datetime, timezone
 
 from core.checkpoint import filtrar_pendentes, registrar, montar_chave
 from core.config import LOG_DIR, validar_config
@@ -22,10 +22,8 @@ from fontes.xp.extrair import extrair
 from fontes.xp.analisar import analisar
 
 
-# ---------------------------------------------------------------------------
-
 def _log(msg: str) -> None:
-    ts = datetime.utcnow().isoformat(timespec="seconds")
+    ts = datetime.now(timezone.utc).isoformat(timespec="seconds")
     print(f"[{ts}] {msg}", flush=True)
 
 
@@ -43,8 +41,6 @@ def _salvar_descobertos(novos: list) -> None:
     _log(f"Tickers fora do catálogo gravados em {p} ({len(novos)} itens)")
 
 
-# ---------------------------------------------------------------------------
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--retry-erros", action="store_true",
@@ -61,13 +57,12 @@ def main() -> int:
     _log("Carregando catálogo + descoberta de índice...")
 
     alvos_cat, novos = descobrir_todos()
-    _log(f"Alvos no catálogo: {len(alvos_cat)}")
+    _log(f"Alvos no catálogo (1 por raiz): {len(alvos_cat)}")
     _log(f"Tickers descobertos fora do catálogo: {len(novos)}")
     _salvar_descobertos(novos)
 
-    # Monta chaves de checkpoint
     chaves = [
-        montar_chave(a.codigo_b3, FONTE, "v1") for a in alvos_cat
+        montar_chave(a.codigo_b3, FONTE, "v2") for a in alvos_cat
     ]
     mapa_chave_alvo = dict(zip(chaves, alvos_cat))
 
@@ -77,7 +72,8 @@ def main() -> int:
     if args.so_listar:
         for c in pendentes[: args.limite or 50]:
             a = mapa_chave_alvo[c]
-            _log(f"  {a.codigo_b3} ({a.tipo_ativo})  →  {a.url}")
+            alts = f" (alt: {','.join(a.tickers_alternativos)})" if a.tickers_alternativos else ""
+            _log(f"  {a.codigo_b3} via {a.ticker_url} ({a.tipo_ativo}){alts}  →  {a.url}")
         return 0
 
     if args.limite:
@@ -88,7 +84,7 @@ def main() -> int:
 
     for i, chave in enumerate(pendentes, 1):
         alvo = mapa_chave_alvo[chave]
-        prefixo = f"[{i}/{len(pendentes)}] {alvo.codigo_b3}"
+        prefixo = f"[{i}/{len(pendentes)}] {alvo.codigo_b3} ({alvo.ticker_url})"
 
         try:
             # 1. Extrai HTML
@@ -99,7 +95,7 @@ def main() -> int:
                 sem_dados += 1
                 continue
 
-            # 2. Dedup pré-Claude
+            # 2. Dedup pré-Claude (chave: codigo_b3 raiz + fonte + data)
             if existe_analise_completa(
                 fonte="xp_research",
                 data_referencia=conteudo.data_referencia,
@@ -122,7 +118,6 @@ def main() -> int:
                       extra={"data_referencia": str(conteudo.data_referencia)})
             ok += 1
 
-            # Cortesia com a API
             time.sleep(0.5)
 
         except Exception as e:

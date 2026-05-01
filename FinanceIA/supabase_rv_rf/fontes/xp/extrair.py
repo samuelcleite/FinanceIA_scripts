@@ -1,16 +1,19 @@
 """
 Extração de conteúdo das páginas do XP Research.
 
-Estrutura típica das páginas:
-- Título: nome do ativo + ticker
-- Bloco de recomendação e preço-alvo (quando há)
-- Corpo do relatório com tese, fundamentos, riscos
-- Data de publicação do relatório mais recente
+Estratégia para data_referencia (camadas):
+1. JSON-LD (datePublished/dateModified)
+2. <meta property="article:modified_time">
+3. <time datetime="...">
+4. Texto "Atualizado em DD/MM/AAAA"
+5. Hoje (fallback)
 
-Como o HTML do XP pode mudar, esta função é defensiva: extrai o que
-conseguir e devolve `None` quando a página não tem relatório ainda
-(ex: ticker existe mas sem cobertura).
+Detecção de relatório real:
+- Conta parágrafos NARRATIVOS (>= 150 chars, com verbo conjugado)
+- Verifica densidade de termos analíticos no corpo (não em menus)
+- Rejeita páginas que só têm cabeçalho + cotação + disclaimer
 """
+import json
 import re
 from dataclasses import dataclass
 from datetime import date, datetime
@@ -25,42 +28,97 @@ from fontes.xp.descobrir import FONTE, AlvoXP
 @dataclass
 class ConteudoXP:
     codigo_b3: str
+    ticker_url: str
     tipo_ativo: str
     url_fonte: str
     data_referencia: date
     texto: str
-    contexto_ativo: str  # ex: "PETR4 — Petrobras PN"
+    contexto_ativo: str
 
 
-def _extrair_data(soup: BeautifulSoup) -> Optional[date]:
-    """Tenta extrair a data de publicação do relatório."""
-    # Tentativa 1: <time datetime="...">
-    t = soup.find("time")
-    if t and t.get("datetime"):
+# ---------------------------------------------------------------------------
+# Extração de data — estratégia em camadas
+# ---------------------------------------------------------------------------
+
+def _data_de_jsonld(soup: BeautifulSoup) -> Optional[date]:
+    for s in soup.find_all("script", type="application/ld+json"):
         try:
-            return datetime.fromisoformat(t["datetime"][:10]).date()
-        except ValueError:
-            pass
+            payload = json.loads(s.string or "{}")
+        except (json.JSONDecodeError, TypeError):
+            continue
+        candidatos = payload if isinstance(payload, list) else [payload]
+        for c in candidatos:
+            if not isinstance(c, dict):
+                continue
+            for chave in ("dateModified", "datePublished"):
+                v = c.get(chave)
+                if v and isinstance(v, str):
+                    try:
+                        return datetime.fromisoformat(v[:10]).date()
+                    except ValueError:
+                        pass
+    return None
 
-    # Tentativa 2: meta property article:published_time
-    m = soup.find("meta", attrs={"property": "article:published_time"})
-    if m and m.get("content"):
-        try:
-            return datetime.fromisoformat(m["content"][:10]).date()
-        except ValueError:
-            pass
 
-    # Tentativa 3: regex em texto "DD/MM/AAAA" ou "DD de mês de AAAA"
-    texto = soup.get_text(" ", strip=True)
-    m = re.search(r"\b(\d{2})/(\d{2})/(\d{4})\b", texto)
+def _data_de_meta(soup: BeautifulSoup) -> Optional[date]:
+    for prop in ("article:modified_time", "article:published_time",
+                 "og:updated_time", "og:article:modified_time",
+                 "og:article:published_time"):
+        m = soup.find("meta", attrs={"property": prop})
+        if m and m.get("content"):
+            try:
+                return datetime.fromisoformat(m["content"][:10]).date()
+            except ValueError:
+                continue
+    return None
+
+
+def _data_de_time_tag(soup: BeautifulSoup) -> Optional[date]:
+    main = soup.find("main") or soup.find("article")
+    candidatos = (main or soup).find_all("time")
+    for t in candidatos:
+        dt = t.get("datetime")
+        if dt:
+            try:
+                return datetime.fromisoformat(dt[:10]).date()
+            except ValueError:
+                continue
+    return None
+
+
+_RE_PT_DATA = re.compile(
+    r"(?:Atualizado|Publicado|Última atualização)[^0-9]{0,30}"
+    r"(\d{1,2})/(\d{1,2})/(\d{4})",
+    re.IGNORECASE,
+)
+
+
+def _data_de_texto_explicito(soup: BeautifulSoup) -> Optional[date]:
+    main = soup.find("main") or soup.find("article") or soup.body
+    if not main:
+        return None
+    texto = main.get_text(" ", strip=True)
+    m = _RE_PT_DATA.search(texto)
     if m:
         try:
             return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
         except ValueError:
-            pass
-
+            return None
     return None
 
+
+def _extrair_data(soup: BeautifulSoup) -> Optional[date]:
+    return (
+        _data_de_jsonld(soup)
+        or _data_de_meta(soup)
+        or _data_de_time_tag(soup)
+        or _data_de_texto_explicito(soup)
+    )
+
+
+# ---------------------------------------------------------------------------
+# Extração de título e corpo
+# ---------------------------------------------------------------------------
 
 def _extrair_titulo(soup: BeautifulSoup) -> str:
     h1 = soup.find("h1")
@@ -70,43 +128,103 @@ def _extrair_titulo(soup: BeautifulSoup) -> str:
     return title.get_text(strip=True) if title else ""
 
 
-def _limpar_texto(soup: BeautifulSoup) -> str:
-    """Remove header/footer/nav/script e devolve texto principal."""
+def _extrair_paragrafos(soup: BeautifulSoup) -> list[str]:
+    """
+    Extrai parágrafos do conteúdo principal, descartando menus/footer/etc.
+    Cada item é o texto de um <p>, <li>, <h2>, <h3>, ou <h4>.
+    """
     for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
         tag.decompose()
 
-    # Tenta achar um <main> ou <article>; senão usa body
     main = soup.find("main") or soup.find("article") or soup.body
     if main is None:
-        return ""
+        return []
 
-    # Junta parágrafos preservando quebras
-    blocos = []
+    paragrafos = []
     for el in main.find_all(["h1", "h2", "h3", "h4", "p", "li"]):
         txt = el.get_text(" ", strip=True)
         if txt and len(txt) > 3:
-            blocos.append(txt)
+            paragrafos.append(txt)
+    return paragrafos
 
-    return "\n\n".join(blocos)
+
+def _texto_completo(paragrafos: list[str]) -> str:
+    return "\n\n".join(paragrafos)
 
 
-def _tem_relatorio(texto: str) -> bool:
+# ---------------------------------------------------------------------------
+# Detecção de relatório real (heurística rigorosa)
+# ---------------------------------------------------------------------------
+
+# Termos analíticos típicos de relatório real (no corpo, não em menus)
+_TERMOS_ANALITICOS = [
+    "tese", "recomenda", "preço-alvo", "preço alvo", "target",
+    "drivers", "perspectiva", "resultado", "balanço", "guidance",
+    "ebitda", "margem", "lucro", "receita", "valuation",
+    "múltiplo", "p/l", "p/vp", "dividend yield", "fluxo de caixa",
+    "alavancagem", "covenants", "investidores", "trimestre",
+]
+
+# Indicadores de "página vazia" (cotação + disclaimer)
+_INDICADORES_VAZIO = [
+    "preço atual",
+    "preço abertura",
+    "preço mínimo",
+    "preço fechamento",
+    "preço máximo",
+    "risco (0",
+    "abra sua conta",
+]
+
+
+def _e_paragrafo_narrativo(texto: str) -> bool:
     """
-    Heurística para detectar se a página tem realmente um relatório
-    e não só um placeholder ou cotação solta.
+    Parágrafo "narrativo" é um texto longo (>= 150 chars) que parece
+    prosa, não label/cabeçalho. Heurística: tem ponto final ou vírgula
+    e proporção razoável de espaços (não é uma URL ou string técnica).
     """
-    if len(texto) < 800:
+    if len(texto) < 150:
         return False
-    palavras_chave = ["tese", "recomenda", "preço-alvo", "preço alvo",
-                      "drivers", "riscos", "perspectiva", "resultado"]
-    texto_lower = texto.lower()
-    return sum(1 for k in palavras_chave if k in texto_lower) >= 2
+    if texto.count(" ") < 15:
+        return False
+    if texto.count(".") + texto.count(",") + texto.count(";") < 2:
+        return False
+    return True
 
+
+def _tem_relatorio(soup) -> bool:
+    """
+    Relatório real precisa ter:
+    1. <h2> "Análise Fundamentalista" / "Vale a pena investir" / similar
+    2. Pelo menos 2 parágrafos narrativos (>=200 chars cada com pontuação)
+    """
+    # Marcador estrutural
+    h2_analitico = any(
+        any(termo in h2.get_text(" ", strip=True).lower()
+            for termo in ["análise fundamentalista", "vale a pena investir",
+                          "tese de investimento"])
+        for h2 in soup.find_all("h2")
+    )
+    if not h2_analitico:
+        return False
+
+    # Conteúdo narrativo substantivo
+    paragrafos = _extrair_paragrafos(soup)
+    narrativos = [
+        p for p in paragrafos
+        if len(p) >= 200
+        and p.count(" ") >= 25
+        and (p.count(".") + p.count(",")) >= 3
+    ]
+    return len(narrativos) >= 2
+# ---------------------------------------------------------------------------
+# Função principal
+# ---------------------------------------------------------------------------
 
 def extrair(alvo: AlvoXP) -> Optional[ConteudoXP]:
     """
     Baixa e processa a página do XP. Retorna None se a página não
-    existir (404) ou não tiver conteúdo de relatório.
+    existir (404) ou não tiver conteúdo de relatório real.
     """
     html = fetch_html(alvo.url, fonte=FONTE)
     if not html:
@@ -114,18 +232,20 @@ def extrair(alvo: AlvoXP) -> Optional[ConteudoXP]:
 
     soup = BeautifulSoup(html, "lxml")
     titulo = _extrair_titulo(soup)
-    texto = _limpar_texto(soup)
+    paragrafos = _extrair_paragrafos(soup)
 
-    if not _tem_relatorio(texto):
+    if not _tem_relatorio(soup):
         return None
 
+    texto = _texto_completo(paragrafos)
     data_ref = _extrair_data(soup) or date.today()
 
     return ConteudoXP(
         codigo_b3=alvo.codigo_b3,
+        ticker_url=alvo.ticker_url,
         tipo_ativo=alvo.tipo_ativo,
         url_fonte=alvo.url,
         data_referencia=data_ref,
         texto=texto,
-        contexto_ativo=titulo or alvo.codigo_b3,
+        contexto_ativo=titulo or alvo.ticker_url,
     )

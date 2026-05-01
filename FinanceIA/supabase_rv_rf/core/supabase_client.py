@@ -2,11 +2,12 @@
 Cliente Supabase para a tabela `analises`.
 
 Convenções:
-- Chave única lógica: (codigo_b3 | emissao_id | emissor_id) + fonte + data_referencia
-- Upsert idempotente: rodar 2x não duplica
-- Antes de chamar Claude, use `existe_analise_completa()` para deduplicar
+- Chave lógica: (codigo_b3 | emissao_id | emissor_id) + fonte + data_referencia
+- Upsert manual (select-then-update-or-insert) porque o índice único usa
+  COALESCE() e o PostgREST não consegue mapear via on_conflict.
+- drivers e riscos são JSONB (arrays Python passam direto pelo postgrest).
 """
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Any, Optional
 
 from supabase import create_client, Client
@@ -25,6 +26,10 @@ def get_client() -> Client:
             raise RuntimeError("SUPABASE_URL/SUPABASE_KEY não configurados no .env")
         _client = create_client(SUPABASE_URL, SUPABASE_KEY)
     return _client
+
+
+def _agora_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
 
 def _normalizar_data(d: Any) -> str:
@@ -46,8 +51,7 @@ def existe_analise_completa(
 ) -> bool:
     """
     Retorna True se já existe análise com tese_investimento preenchida
-    para essa combinação (ativo, fonte, data). Usado para pular Claude
-    em registros já completos.
+    para essa combinação (ativo, fonte, data).
     """
     sb = get_client()
     q = (
@@ -72,39 +76,25 @@ def existe_analise_completa(
 
 def upsert_analise(payload: dict) -> dict:
     """
-    Insere ou atualiza uma análise. Espera o dict canônico:
+    Insere ou atualiza uma análise.
 
-    {
-      "tipo_ativo": "acao" | "fii" | "debenture" | "cri_cra" | "tesouro",
-      "codigo_b3": "PETR4" | None,
-      "emissao_id": "..." | None,
-      "emissor_id": "..." | None,
-      "fonte": "xp_research" | ...,
-      "url_fonte": "https://...",
-      "data_referencia": "2026-04-15",
-      "tese_investimento": "...",
-      "drivers": "...",
-      "riscos": "...",
-      "recomendacao": "compra" | "neutro" | "venda" | None,
-      "preco_alvo": 42.50 | None,
-      "rating": "AAA" | None,
-      "spread_indicativo": 1.85 | None,
-      "ativo": True
-    }
-
-    Idempotência via índice único composto:
-      uq_analises_ativo_fonte_data
-        (COALESCE(codigo_b3,''), COALESCE(emissao_id,''),
-         COALESCE(emissor_id,''), fonte, data_referencia)
+    Estratégia: select pela chave lógica → update se existe, insert se não.
+    Aceita drivers e riscos como list[str] (vão direto pra coluna JSONB).
     """
     sb = get_client()
 
     payload = {**payload}
     payload["data_referencia"] = _normalizar_data(payload["data_referencia"])
     payload.setdefault("ativo", True)
-    payload["updated_at"] = datetime.utcnow().isoformat()
+    payload["updated_at"] = _agora_iso()
 
-    # Remove chaves que não existem na tabela (proteção contra typos)
+    # Garante que drivers/riscos são listas (mesmo que vazias)
+    if "drivers" in payload and payload["drivers"] is None:
+        payload["drivers"] = []
+    if "riscos" in payload and payload["riscos"] is None:
+        payload["riscos"] = []
+
+    # Filtra campos válidos
     campos_validos = {
         "id", "tipo_ativo", "codigo_b3", "emissao_id", "emissor_id",
         "fonte", "url_fonte", "data_referencia",
@@ -114,10 +104,40 @@ def upsert_analise(payload: dict) -> dict:
     }
     payload = {k: v for k, v in payload.items() if k in campos_validos}
 
-    res = sb.table("analises").upsert(
-        payload,
-        on_conflict="codigo_b3,emissao_id,emissor_id,fonte,data_referencia",
-    ).execute()
+    # Busca registro existente pela chave lógica
+    q = (
+        sb.table("analises")
+        .select("id")
+        .eq("fonte", payload["fonte"])
+        .eq("data_referencia", payload["data_referencia"])
+    )
+    if payload.get("codigo_b3"):
+        q = q.eq("codigo_b3", payload["codigo_b3"])
+    else:
+        q = q.is_("codigo_b3", "null")
+    if payload.get("emissao_id"):
+        q = q.eq("emissao_id", payload["emissao_id"])
+    else:
+        q = q.is_("emissao_id", "null")
+    if payload.get("emissor_id"):
+        q = q.eq("emissor_id", payload["emissor_id"])
+    else:
+        q = q.is_("emissor_id", "null")
+
+    existente = q.limit(1).execute()
+
+    if existente.data:
+        analise_id = existente.data[0]["id"]
+        payload_update = {k: v for k, v in payload.items()
+                          if k not in ("id", "created_at")}
+        res = (
+            sb.table("analises")
+            .update(payload_update)
+            .eq("id", analise_id)
+            .execute()
+        )
+    else:
+        res = sb.table("analises").insert(payload).execute()
 
     return res.data[0] if res.data else {}
 
@@ -127,5 +147,5 @@ def marcar_inativa(analise_id: str) -> None:
     sb = get_client()
     sb.table("analises").update({
         "ativo": False,
-        "updated_at": datetime.utcnow().isoformat(),
+        "updated_at": _agora_iso(),
     }).eq("id", analise_id).execute()

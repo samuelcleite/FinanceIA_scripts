@@ -7,6 +7,12 @@ Uso típico:
 
 Cache em memória por execução — evita bater no Supabase múltiplas vezes
 no mesmo run.
+
+Schema esperado de `ativos_rv`:
+- codigo_b3: ticker RAIZ (PETR, B3SA, HGLG)
+- nome: razão social
+- tipo: 'ACAO' | 'FII' (maiúsculas no banco; o loader normaliza p/ minúsculas)
+- tickers: TEXT[] com tickers individuais B3 (['PETR3', 'PETR4'])
 """
 from functools import lru_cache
 from typing import Optional
@@ -42,16 +48,16 @@ def _paginate(table: str, select: str, *, filtros: Optional[list[tuple]] = None)
 def carregar_acoes() -> list[dict]:
     """
     Retorna lista de ações ativas do catálogo.
-    Espera tabela ativos_rv com colunas: codigo_b3, tipo, nome.
-    Normaliza tipo para minúsculas no retorno (convenção do pipeline).
+    `tipo` é normalizado pra minúsculas; `tickers` vem como list[str].
     """
     rows = _paginate(
         "ativos_rv",
-        "codigo_b3, nome, tipo",
+        "codigo_b3, nome, tipo, tickers",
         filtros=[("tipo", "eq", "ACAO")],
     )
     for r in rows:
         r["tipo"] = "acao"
+        r["tickers"] = r.get("tickers") or []
     return rows
 
 
@@ -60,12 +66,14 @@ def carregar_fiis() -> list[dict]:
     """Retorna lista de FIIs ativos do catálogo (tipo normalizado pra minúsculas)."""
     rows = _paginate(
         "ativos_rv",
-        "codigo_b3, nome, tipo",
+        "codigo_b3, nome, tipo, tickers",
         filtros=[("tipo", "eq", "FII")],
     )
     for r in rows:
         r["tipo"] = "fii"
+        r["tickers"] = r.get("tickers") or []
     return rows
+
 
 @lru_cache(maxsize=1)
 def carregar_debentures() -> list[dict]:
@@ -97,11 +105,11 @@ def carregar_emissores_rf() -> list[dict]:
 
 
 def buscar_ativo_rv(codigo_b3: str) -> Optional[dict]:
-    """Busca pontual de um ticker, sem cache (uso em fluxo de descoberta)."""
+    """Busca pontual de um ticker raiz, sem cache (uso em fluxo de descoberta)."""
     sb = get_client()
     res = (
         sb.table("ativos_rv")
-        .select("codigo_b3, nome, tipo")
+        .select("codigo_b3, nome, tipo, tickers")
         .eq("codigo_b3", codigo_b3)
         .limit(1)
         .execute()
