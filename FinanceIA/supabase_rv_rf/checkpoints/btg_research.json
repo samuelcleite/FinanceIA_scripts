@@ -1,0 +1,1017 @@
+{
+  "69f3c33f80413b49df476ffb_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-02T13:08:02.471740",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-30"
+  },
+  "69f36a3580413b49df476ff7_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-02T13:13:10.608331",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-30"
+  },
+  "69f34a9680413b49df476fed_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:12:18.263856",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-30"
+  },
+  "69f348af80413b49df476fec_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:16:55.707606",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-30"
+  },
+  "69f34c1480413b49df476fee_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:21:59.700153",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-30"
+  },
+  "69f265e280413b49df476d1e_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:30:50.868454",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f24d1b80413b49df476d1c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:30:58.396375",
+    "ativos_gravados": 2,
+    "ativos_total": 2,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f21a7e80413b49df476d19_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:05.793038",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f20d4f80413b49df476d15_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:11.926231",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f208c180413b49df476d14_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:18.022940",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f1e89a80413b49df476d10_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:23.725507",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-29"
+  },
+  "69f0eebc80413b49df476a44_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:30.714795",
+    "ativos_gravados": 6,
+    "ativos_total": 6,
+    "falhas": [],
+    "data_referencia": "2026-04-28"
+  },
+  "69f0a57280413b49df476a3f_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:36.606407",
+    "ativos_gravados": 5,
+    "ativos_total": 5,
+    "falhas": [],
+    "data_referencia": "2026-04-28"
+  },
+  "69f0a01180413b49df476a3c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:42.799511",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-28"
+  },
+  "69ef65fce81a785430016858_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:50.612563",
+    "ativos_gravados": 13,
+    "ativos_total": 13,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69ef5eb5e81a785430016856_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:31:56.300778",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69f3567c80413b49df476fef_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:02.280418",
+    "ativos_gravados": 5,
+    "ativos_total": 5,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "67a9f211ab9be445517c457d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:10.412475",
+    "ativos_gravados": 15,
+    "ativos_total": 15,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69f253b280413b49df476d1d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:16.635669",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69ebc6ebe81a785430015fed_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:25.463016",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-24"
+  },
+  "69eb6789e81a785430015fe8_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:31.477898",
+    "ativos_gravados": 3,
+    "ativos_total": 3,
+    "falhas": [],
+    "data_referencia": "2026-04-24"
+  },
+  "69ebf7e1e81a785430015ff5_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:37.312988",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-23"
+  },
+  "69ebe7f7e81a785430015ff3_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:45.042312",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-23"
+  },
+  "69ef73cde81a78543001685b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:51.573071",
+    "ativos_gravados": 2,
+    "ativos_total": 2,
+    "falhas": [],
+    "data_referencia": "2026-04-22"
+  },
+  "69e6257f47ab882bd960cea8_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:32:57.274143",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-20"
+  },
+  "69e2a20a47ab882bd960c63d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:03.562652",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-17"
+  },
+  "69efeb55e81a785430016865_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:10.809134",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-17"
+  },
+  "69ef87fde81a78543001685c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:15.821853",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-17"
+  },
+  "69e11f9647ab882bd960c367_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:21.713174",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-16"
+  },
+  "69e11cea47ab882bd960c366_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:27.531805",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-16"
+  },
+  "69e11b1547ab882bd960c365_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:33.330511",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-16"
+  },
+  "69e111e847ab882bd960c364_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:38.723356",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-16"
+  },
+  "69efa94de81a78543001685e_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:44.649273",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-16"
+  },
+  "69df93b147ab882bd960c08b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:33:54.098430",
+    "ativos_gravados": 16,
+    "ativos_total": 16,
+    "falhas": [],
+    "data_referencia": "2026-04-15"
+  },
+  "69df889547ab882bd960c085_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:00.010218",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-15"
+  },
+  "69df86b247ab882bd960c084_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:06.824080",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-15"
+  },
+  "69f2774c80413b49df476d20_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:14.556500",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-15"
+  },
+  "69dea6d647ab882bd960bdb3_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:20.256899",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-14"
+  },
+  "69dea45b47ab882bd960bdb2_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:25.674916",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-14"
+  },
+  "69de84d647ab882bd960bda0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:31.311219",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-14"
+  },
+  "69de3e8147ab882bd960bd9b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:36.555639",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-14"
+  },
+  "69df8b4747ab882bd960c086_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:42.035650",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-12"
+  },
+  "69d7a23247ab882bd960af7a_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:48.110846",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-09"
+  },
+  "69d79c1d47ab882bd960af78_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:34:53.519891",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-09"
+  },
+  "69d79a0547ab882bd960af77_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:01.384570",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-09"
+  },
+  "69d792fb47ab882bd960af76_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:07.542525",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-09"
+  },
+  "69f3d05180413b49df476ffc_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:14.034194",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-08"
+  },
+  "69d56d8647ab882bd960a9d5_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:20.682349",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-07"
+  },
+  "69d4f68847ab882bd960a9cb_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:27.586333",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-07"
+  },
+  "69d3b32747ab882bd960a6f0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:34.590401",
+    "ativos_gravados": 5,
+    "ativos_total": 5,
+    "falhas": [],
+    "data_referencia": "2026-04-06"
+  },
+  "69cea89047ab882bd9609bb9_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:41.591623",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-04-02"
+  },
+  "69cbc89747ab882bd9609608_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:47.304357",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-31"
+  },
+  "69babd7e5459fb5b42177660_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:52.898520",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-18"
+  },
+  "69baba335459fb5b4217765f_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:35:59.856102",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-18"
+  },
+  "69c03bda5459fb5b421781a8_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:05.671628",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-18"
+  },
+  "69b415275459fb5b42176846_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:11.842101",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-13"
+  },
+  "69b474c15459fb5b42176853_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:18.991778",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-12"
+  },
+  "69b04aad5459fb5b42175fd0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:25.048226",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-10"
+  },
+  "69aad41790042b1710cd994c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:30.802134",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-06"
+  },
+  "69a9b7f6de8714273cfd232b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:38.317240",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-05"
+  },
+  "69a6d7eade8714273cfd1d7e_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:45.140425",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-03"
+  },
+  "69b1efdc5459fb5b421762a7_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:51.320521",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-03-03"
+  },
+  "69af2a175459fb5b42175cf0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:36:57.562021",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-26"
+  },
+  "69a602e9de8714273cfd1aae_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:03.878807",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-26"
+  },
+  "699c6469de8714273cfd06d8_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:10.157717",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-23"
+  },
+  "6997601ade8714273cfcfbad_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:20.540087",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-19"
+  },
+  "698f6244de8714273cfceb14_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:27.030279",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-13"
+  },
+  "6997700ade8714273cfcfbaf_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:33.026025",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-13"
+  },
+  "69960c91de8714273cfcf8e2_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:40.781591",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-12"
+  },
+  "698c89e7de8714273cfce56e_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:46.586992",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-11"
+  },
+  "698b9acfde8714273cfce2a0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:37:52.719862",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-10"
+  },
+  "69977ef3de8714273cfcfbb0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:01.400787",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-10"
+  },
+  "69864282de8714273cfcd76b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:09.074368",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-06"
+  },
+  "698637a9de8714273cfcd769_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:16.273745",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-06"
+  },
+  "6984e830de8714273cfcd49d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:24.120053",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-05"
+  },
+  "69823e8ade8714273cfccf03_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:29.405396",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-02-03"
+  },
+  "696a8b7cde8714273cfc9ca0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:35.674776",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-01-16"
+  },
+  "696e7b43de8714273cfca4fe_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:42.165798",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-01-16"
+  },
+  "6967aa963911847373f5c0a4_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:49.020962",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2026-01-14"
+  },
+  "6965610f3911847373f5baff_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:38:56.994374",
+    "ativos_gravados": 3,
+    "ativos_total": 3,
+    "falhas": [],
+    "data_referencia": "2026-01-12"
+  },
+  "6941a8e03911847373f56fa6_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:02.803710",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-12-16"
+  },
+  "693c646659b2a955b0f8eca0_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:11.737979",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-12-12"
+  },
+  "693b3b0b5795316a2db93c3a_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:17.173791",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-12-11"
+  },
+  "690cae1de3d4324a1d089b7f_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:24.084211",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-11-06"
+  },
+  "68e006f1e607d66553511ca6_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:30.813445",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-10-03"
+  },
+  "6867e33242632f3bfaee37bc_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:38.479384",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-07-04"
+  },
+  "6827357eeb399770836193f9_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:44.512552",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-05-16"
+  },
+  "67e18defdcbe0029bdeb16dd_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:52.316621",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-03-24"
+  },
+  "67ca0256ab9be445517c84fa_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:39:59.471268",
+    "ativos_gravados": 3,
+    "ativos_total": 3,
+    "falhas": [],
+    "data_referencia": "2025-03-06"
+  },
+  "67aa1646ab9be445517c4584_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:04.709139",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-02-10"
+  },
+  "6781791393a28a32d9871398_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:10.201180",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2025-01-10"
+  },
+  "672cf511def1e5426e841cf5_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:17.670724",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-11-07"
+  },
+  "69127e4498c46672d55c4ac5_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:20.459010",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-10-14"
+  },
+  "66fabd24705e6832435e621d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:26.932876",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-09-30"
+  },
+  "66eca1b2673d36742a2ce90c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:32.647998",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-09-19"
+  },
+  "66e437f88903b0509e5ba293_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:39.127838",
+    "ativos_gravados": 2,
+    "ativos_total": 2,
+    "falhas": [],
+    "data_referencia": "2024-09-13"
+  },
+  "66d613049eca293dfd66bf40_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:44.576147",
+    "ativos_gravados": 2,
+    "ativos_total": 2,
+    "falhas": [],
+    "data_referencia": "2024-09-02"
+  },
+  "66d1fe239eca293dfd66b784_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:50.743506",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-08-30"
+  },
+  "66b21dc26eccc95ebe90c23c_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:40:56.390800",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-08-06"
+  },
+  "6630280d5b24de3925bbacc2_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:03.003680",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2024-03-20"
+  },
+  "6631494f25df1ecc9cbc9736_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:08.051284",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2023-12-13"
+  },
+  "6631499a25df1ecc9cbe1a48_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:13.965433",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2023-09-01"
+  },
+  "66314bb425df1ecc9ccb908b_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:21.242438",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2023-05-23"
+  },
+  "66314bb525df1ecc9ccb96b8_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:27.230997",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2023-04-11"
+  },
+  "66314bfd25df1ecc9ccce93b_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:41:27.638389",
+    "motivo": "body_insuficiente"
+  },
+  "66314bfd25df1ecc9ccce8f9_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:32.955082",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2023-01-16"
+  },
+  "66314cbf25df1ecc9cce986d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:38.342705",
+    "ativos_gravados": 1,
+    "ativos_total": 1,
+    "falhas": [],
+    "data_referencia": "2022-07-05"
+  },
+  "69f3467280413b49df476feb_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:41:38.763729",
+    "motivo": "body_insuficiente"
+  },
+  "69f09ff680413b49df476a3b_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:41:38.767753",
+    "motivo": "body_insuficiente"
+  },
+  "69efcbabe81a785430016863_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:41:49.826493",
+    "ativos_gravados": 43,
+    "ativos_total": 43,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69efa7c8e81a78543001685d_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:42:01.336428",
+    "ativos_gravados": 28,
+    "ativos_total": 28,
+    "falhas": [],
+    "data_referencia": "2026-04-27"
+  },
+  "69ef56ffe81a785430016852_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:01.741734",
+    "motivo": "body_insuficiente"
+  },
+  "69eb68dee81a785430015fe9_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:42:08.668097",
+    "ativos_gravados": 8,
+    "ativos_total": 8,
+    "falhas": [],
+    "data_referencia": "2026-04-24"
+  },
+  "69ea833ae81a785430015d16_btg_research": {
+    "_status": "ok",
+    "ts": "2026-05-03T12:42:16.293736",
+    "ativos_gravados": 11,
+    "ativos_total": 11,
+    "falhas": [],
+    "data_referencia": "2026-04-23"
+  },
+  "69df6b2047ab882bd960c080_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.701856",
+    "motivo": "body_insuficiente"
+  },
+  "69de2a6647ab882bd960bd9a_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.706079",
+    "motivo": "body_insuficiente"
+  },
+  "69d8ef8947ab882bd960b251_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.712217",
+    "motivo": "body_insuficiente"
+  },
+  "69d79ca547ab882bd960af79_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.723480",
+    "motivo": "body_insuficiente"
+  },
+  "69ca6ced47ab882bd960931d_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.725852",
+    "motivo": "body_insuficiente"
+  },
+  "69c52be3b95d9c36305dc5c3_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.737295",
+    "motivo": "body_insuficiente"
+  },
+  "69bd3c105459fb5b42177c14_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.737295",
+    "motivo": "body_insuficiente"
+  },
+  "69bc25385459fb5b42177938_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.751645",
+    "motivo": "body_insuficiente"
+  },
+  "699ef0d4de8714273cfd0c83_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.753302",
+    "motivo": "body_insuficiente"
+  },
+  "699d9bdade8714273cfd09ad_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.753302",
+    "motivo": "body_insuficiente"
+  },
+  "699c41e7de8714273cfd06d0_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.753302",
+    "motivo": "body_insuficiente"
+  },
+  "69849411de8714273cfcd498_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.768374",
+    "motivo": "body_insuficiente"
+  },
+  "69833ceade8714273cfcd1c9_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.768374",
+    "motivo": "body_insuficiente"
+  },
+  "6981ecd6de8714273cfccefc_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.774950",
+    "motivo": "body_insuficiente"
+  },
+  "697a0069de8714273cfcbe35_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.782104",
+    "motivo": "body_insuficiente"
+  },
+  "69721460de8714273cfcad6d_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.785112",
+    "motivo": "body_insuficiente"
+  },
+  "696f6ed2de8714273cfca7d1_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.785112",
+    "motivo": "body_insuficiente"
+  },
+  "696788b23911847373f5c0a2_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.785112",
+    "motivo": "body_insuficiente"
+  },
+  "692845dc5795316a2db917cf_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.800753",
+    "motivo": "body_insuficiente"
+  },
+  "69147b4c98c46672d55c507a_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.803522",
+    "motivo": "body_insuficiente"
+  },
+  "67ea96dd90b20654491c60ef_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.803522",
+    "motivo": "body_insuficiente"
+  },
+  "6750452db837f6164f106304_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.803522",
+    "motivo": "body_insuficiente"
+  },
+  "6630280d5b24de3925bbaab0_btg_research": {
+    "_status": "sem_dados",
+    "ts": "2026-05-03T12:42:16.815516",
+    "motivo": "body_insuficiente"
+  }
+}

@@ -8,6 +8,7 @@ Saída padronizada (dict):
   recomendacao, preco_alvo, rating, spread_indicativo
 """
 import json
+import re
 import time
 from typing import Any, Optional
 
@@ -39,7 +40,7 @@ corretoras brasileiras e destilar três blocos sobre o ativo analisado:
 
 1. tese_investimento (string)
    Um parágrafo de 80 a 150 palavras explicando, em tom OPINATIVO MAS
-   EQUILIBRADO, por que comprar/manter/evitar este ativo. Use construções
+   EQUILIBRADO, como funciona a operação da empresa epor que comprar/manter/evitar este ativo. Use construções
    como "a tese parece sólida porque...", "o caso de investimento se
    sustenta em...", "vemos espaço para...". Foco em fundamentos, posicionamento
    competitivo e contexto setorial. Não descreva o que o relatório diz —
@@ -336,19 +337,29 @@ def analisar_pdf_url_multi(
     """Variante para PDFs multi-ativo (ex: relatório Santander de FIIs)."""
     instrucao = _instrucao_por_tipo(tipo_ativo)
 
-    schema_multi = """Formato de saída (JSON estrito, ARRAY):
-[
-  {
-    "codigo_b3": "string (ticker raiz do ativo)",
-    "tese_investimento": "string (80-150 palavras)",
-    "drivers": ["string", ...],
-    "riscos": ["string", ...],
-    "recomendacao": "compra" | "neutro" | "venda" | null,
-    "preco_alvo": number | null,
-    "rating": "string" | null,
-    "spread_indicativo": number | null
-  }
-]"""
+    schema_multi = """Formato de saída (JSON estrito, OBJETO com dois campos):
+{
+  "mes_referencia": "YYYY-MM" | null,
+  "analises": [
+    {
+      "codigo_b3": "string (ticker raiz do ativo)",
+      "tese_investimento": "string (80-150 palavras)",
+      "drivers": ["string", ...],
+      "riscos": ["string", ...],
+      "recomendacao": "compra" | "neutro" | "venda" | null,
+      "preco_alvo": number | null,
+      "rating": "string" | null,
+      "spread_indicativo": number | null
+    }
+  ]
+}
+
+Campo mes_referencia: extraia o MÊS DA CARTEIRA do header do relatório (não a
+data de publicação). Exemplos:
+- "ABRIL 2026" ou "Carteira de Abril/2026" → "2026-04"
+- "MARÇO 2026" → "2026-03"
+- Se não houver indicação clara de mês, retorne null.
+O mes_referencia é único para o PDF inteiro (todos os ativos compartilham)."""
 
     texto_user = (
         f"{instrucao}\n\n"
@@ -361,7 +372,7 @@ def analisar_pdf_url_multi(
     client = get_client()
     resp = client.messages.create(
         model=modelo,
-        max_tokens=8000,
+        max_tokens=16000,
         system=SYSTEM_PROMPT,
         messages=[{
             "role": "user",
@@ -373,19 +384,108 @@ def analisar_pdf_url_multi(
     )
     texto = "".join(b.text for b in resp.content if b.type == "text")
 
-    # Mesmo tratamento robusto pra arrays
+    # Limpa code fences ```json ... ```
     t = texto.strip()
     if t.startswith("```"):
         t = t.strip("`")
         if t.startswith("json"):
             t = t[4:]
         t = t.strip()
-    try:
-        parsed = json.loads(t)
-    except json.JSONDecodeError:
-        parsed, _ = json.JSONDecoder().raw_decode(t)
 
-    if not isinstance(parsed, list):
-        raise ValueError("Esperava array JSON, recebeu objeto")
-    return [_normalizar_resposta(item) | {"codigo_b3": item.get("codigo_b3")}
-            for item in parsed]
+    parsed = _parse_resposta_multi_tolerante(t)
+
+    if not isinstance(parsed, (list, dict)):
+        raise ValueError("Esperava array ou objeto JSON")
+
+    # Suporta dois formatos:
+    # - Novo: {"mes_referencia": "YYYY-MM", "analises": [...]}
+    # - Legado: [...]  (array direto)
+    if isinstance(parsed, dict):
+        mes_ref = parsed.get("mes_referencia")
+        itens = parsed.get("analises") or []
+    else:
+        mes_ref = None
+        itens = parsed
+
+    if not isinstance(itens, list):
+        raise ValueError("Campo 'analises' não é array")
+
+    return [
+        _normalizar_resposta(item) | {
+            "codigo_b3": item.get("codigo_b3"),
+            "mes_referencia": mes_ref,
+        }
+        for item in itens
+    ]
+
+
+def _parse_resposta_multi_tolerante(t: str) -> dict | list:
+    """
+    Parseia a resposta JSON de analisar_pdf_url_multi com 3 níveis de tolerância:
+
+    1. json.loads estrito (caminho feliz).
+    2. JSONDecoder.raw_decode (tolera lixo após o JSON).
+    3. Recuperação parcial: se o Claude truncou no meio (max_tokens estourado),
+       extrai os objetos {...} já completos do array de análises e descarta o
+       último incompleto. Funciona tanto pro wrapper {mes_referencia, analises}
+       quanto pro formato legado (array direto).
+
+    Sempre retorna dict ou list (vazia se nada parseável).
+    """
+    try:
+        return json.loads(t)
+    except json.JSONDecodeError:
+        pass
+    try:
+        v, _ = json.JSONDecoder().raw_decode(t)
+        return v
+    except json.JSONDecodeError:
+        pass
+
+    # Recuperação parcial — caminhar pelos objetos completos
+    decoder = json.JSONDecoder()
+    stripped = t.lstrip()
+
+    if stripped.startswith("{"):
+        # Formato novo: extrai mes_referencia (no começo) + analises parseáveis
+        m = re.search(r'"mes_referencia"\s*:\s*"(\d{4}-\d{2})"', t)
+        mes_ref = m.group(1) if m else None
+        idx = t.find('"analises"')
+        if idx < 0:
+            return {"mes_referencia": mes_ref, "analises": []}
+        idx = t.find("[", idx)
+        if idx < 0:
+            return {"mes_referencia": mes_ref, "analises": []}
+        return {
+            "mes_referencia": mes_ref,
+            "analises": _extrair_objs_iterativo(t, idx + 1, decoder),
+        }
+
+    if stripped.startswith("["):
+        idx = t.find("[")
+        return _extrair_objs_iterativo(t, idx + 1, decoder)
+
+    return []
+
+
+def _extrair_objs_iterativo(
+    t: str, start: int, decoder: json.JSONDecoder,
+) -> list[dict]:
+    """Caminha por um array a partir de `start`, extraindo objetos {...}
+    completos um por um. Para no primeiro objeto malformado/truncado."""
+    items: list[dict] = []
+    i = start
+    while i < len(t):
+        # Pula whitespace e vírgulas entre objetos
+        while i < len(t) and t[i] in " \t\n\r,":
+            i += 1
+        if i >= len(t) or t[i] == "]":
+            break
+        try:
+            obj, end = decoder.raw_decode(t, i)
+        except json.JSONDecodeError:
+            break
+        if isinstance(obj, dict):
+            items.append(obj)
+        i = end
+    return items

@@ -1,0 +1,112 @@
+2026-05-01 17:33:47,244 [INFO] __main__: Checkpoint carregado: 0 entradas
+2026-05-01 17:33:47,244 [WARNING] fontes.santander.descobrir: Página índice retornou vazia (404 ou similar)
+2026-05-01 17:33:47,245 [INFO] fontes.santander.descobrir: Santander: 4 alvos descobertos (4 fixos, 0 crawl)
+2026-05-01 17:33:47,245 [INFO] __main__: Alvos descobertos: 4
+2026-05-01 17:33:47,245 [INFO] __main__: [1/1] Fundos-Imobiliarios
+2026-05-01 17:33:47,585 [INFO] fontes.santander.analisar: Analisando PDF Fundos-Imobiliarios (tipo=fii, url=https://investimentos.santander.com.br/materiais/relatorios/Fundos-Imobiliarios.pdf)
+2026-05-01 17:35:41,566 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 17:35:41,591 [INFO] fontes.santander.analisar: Claude extraiu 12 ativos de Fundos-Imobiliarios
+2026-05-01 17:35:43,416 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/ativos_rv?select=codigo_b3%2Cnome%2Ctipo%2Ctickers&tipo=eq.FII&offset=0&limit=1000 "HTTP/2 200 OK"
+2026-05-01 17:35:43,435 [INFO] fontes.santander.analisar: Catálogo fii carregado: 927 tickers → 513 ativos raiz
+2026-05-01 17:35:43,435 [INFO] fontes.santander.analisar: data_referencia resolvida: 2026-04-01
+2026-05-01 17:35:43,577 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.MCCI&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:43,733 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:43,881 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.HGCR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:43,982 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,068 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.KNCR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:44,157 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,234 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.PCIP&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:44,335 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,397 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.BTHF&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:44,499 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,597 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.KNHF&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:44,684 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,762 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.XPML&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:44,839 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:44,913 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.BRCO&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:45,001 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:45,148 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.VILG&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:45,248 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:45,308 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.GARE&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:45,384 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:45,473 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.TRXF&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:45,551 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:45,665 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.TEPP&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:35:45,746 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:35:45,749 [INFO] __main__: OK Fundos-Imobiliarios: 12/12 ativos gravados
+2026-05-01 17:35:45,749 [INFO] __main__: Resumo: 1 PDFs ok | 0 pulados | 0 erros | 12 registros gravados
+2026-05-01 17:36:08,910 [INFO] __main__: Checkpoint carregado: 1 entradas
+2026-05-01 17:36:08,910 [WARNING] fontes.santander.descobrir: Página índice retornou vazia (404 ou similar)
+2026-05-01 17:36:08,910 [INFO] fontes.santander.descobrir: Santander: 4 alvos descobertos (4 fixos, 0 crawl)
+2026-05-01 17:36:08,910 [INFO] __main__: Alvos descobertos: 4
+2026-05-01 17:36:08,910 [INFO] __main__: [1/4] Fundos-Imobiliarios
+2026-05-01 17:36:08,910 [INFO] __main__: Já processado (Fundos-Imobiliarios), pulando
+2026-05-01 17:36:08,910 [INFO] __main__: [2/4] Carteira-Valor
+2026-05-01 17:36:09,190 [INFO] fontes.santander.analisar: Analisando PDF Carteira-Valor (tipo=acao, url=https://investimentos.santander.com.br/materiais/relatorios/Carteira-Valor.pdf)
+2026-05-01 17:37:11,032 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 17:37:11,060 [INFO] fontes.santander.analisar: Claude extraiu 5 ativos de Carteira-Valor
+2026-05-01 17:37:11,927 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/ativos_rv?select=codigo_b3%2Cnome%2Ctipo%2Ctickers&tipo=eq.ACAO&offset=0&limit=1000 "HTTP/2 200 OK"
+2026-05-01 17:37:11,947 [INFO] fontes.santander.analisar: Catálogo acao carregado: 923 tickers → 471 ativos raiz
+2026-05-01 17:37:11,947 [INFO] fontes.santander.analisar: data_referencia resolvida: 2026-04-01
+2026-05-01 17:37:12,037 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.VALE&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:37:12,124 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:37:12,216 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.BBDC&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:37:12,304 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:37:12,368 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.CSMG&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:37:12,437 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:37:12,522 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.RENT&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:37:12,604 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:37:12,681 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.RDOR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:37:12,781 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:37:12,798 [INFO] __main__: OK Carteira-Valor: 5/5 ativos gravados
+2026-05-01 17:37:12,799 [INFO] __main__: [3/4] Carteira-Dividendos
+2026-05-01 17:37:13,141 [INFO] fontes.santander.analisar: Analisando PDF Carteira-Dividendos (tipo=acao, url=https://investimentos.santander.com.br/materiais/relatorios/Carteira-Dividendos.pdf)
+2026-05-01 17:38:54,384 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 17:38:54,395 [INFO] fontes.santander.analisar: Claude extraiu 10 ativos de Carteira-Dividendos
+2026-05-01 17:38:54,395 [INFO] fontes.santander.analisar: data_referencia resolvida: 2026-04-01
+2026-05-01 17:38:54,395 [WARNING] fontes.santander.analisar: 1 ticker(s) descartado(s) por não estarem no catálogo (Carteira-Dividendos): AXIA6
+2026-05-01 17:38:54,879 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.ALOS&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:54,994 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,067 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.ALUP&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,146 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,220 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.BPAC&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,282 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,359 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.CPLE&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,435 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,514 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.CURY&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,588 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,664 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.ITUB&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,736 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:55,807 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.PETR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:55,882 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:56,480 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.VIVT&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:56,564 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:38:56,632 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.VALE&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:38:56,720 [INFO] httpx: HTTP Request: PATCH https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?id=eq.62b5681b-30c2-4b99-b333-9a56263d44c9 "HTTP/2 200 OK"
+2026-05-01 17:38:56,721 [INFO] __main__: OK Carteira-Dividendos: 9/9 ativos gravados
+2026-05-01 17:38:56,721 [INFO] __main__: [4/4] Small-Caps
+2026-05-01 17:38:57,001 [INFO] fontes.santander.analisar: Analisando PDF Small-Caps (tipo=acao, url=https://investimentos.santander.com.br/materiais/relatorios/Small-Caps.pdf)
+2026-05-01 17:40:42,192 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 17:40:42,209 [INFO] fontes.santander.analisar: Claude extraiu 10 ativos de Small-Caps
+2026-05-01 17:40:42,209 [INFO] fontes.santander.analisar: data_referencia resolvida: 2026-04-01
+2026-05-01 17:40:42,211 [WARNING] fontes.santander.analisar: 1 ticker(s) descartado(s) por não estarem no catálogo (Small-Caps): AURA33
+2026-05-01 17:40:42,898 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.TTEN&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,010 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,094 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.CEAB&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,177 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,260 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.DIRR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,375 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,440 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.FLRY&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,529 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,598 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.GGPS&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,693 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,754 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.IGTI&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:43,820 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:43,957 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.POMO&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:44,030 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:44,092 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.ORVR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:44,158 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:44,215 [INFO] httpx: HTTP Request: GET https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises?select=id&fonte=eq.santander_research&data_referencia=eq.2026-04-01&codigo_b3=eq.SAPR&emissao_id=is.null&emissor_id=is.null&limit=1 "HTTP/2 200 OK"
+2026-05-01 17:40:44,328 [INFO] httpx: HTTP Request: POST https://xvqgamwkjuspeayknvac.supabase.co/rest/v1/analises "HTTP/2 201 Created"
+2026-05-01 17:40:44,331 [INFO] __main__: OK Small-Caps: 9/9 ativos gravados
+2026-05-01 17:40:44,334 [INFO] __main__: Resumo: 3 PDFs ok | 1 pulados | 0 erros | 23 registros gravados

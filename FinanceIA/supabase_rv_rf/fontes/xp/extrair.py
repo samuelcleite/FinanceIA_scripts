@@ -1,5 +1,11 @@
+@"
 """
 Extração de conteúdo das páginas do XP Research.
+
+Suporta dois formatos:
+  - Ações: página canônica /acoes/{ticker}/ com H2 "Análise Fundamentalista"
+  - FIIs:  relatório avulso /fundos-imobiliarios/relatorios/{slug}/ com
+           estrutura mais livre (sem H2 padronizado, mas com corpo narrativo)
 
 Estratégia para data_referencia (camadas):
 1. JSON-LD (datePublished/dateModified)
@@ -7,11 +13,6 @@ Estratégia para data_referencia (camadas):
 3. <time datetime="...">
 4. Texto "Atualizado em DD/MM/AAAA"
 5. Hoje (fallback)
-
-Detecção de relatório real:
-- Conta parágrafos NARRATIVOS (>= 150 chars, com verbo conjugado)
-- Verifica densidade de termos analíticos no corpo (não em menus)
-- Rejeita páginas que só têm cabeçalho + cotação + disclaimer
 """
 import json
 import re
@@ -129,17 +130,11 @@ def _extrair_titulo(soup: BeautifulSoup) -> str:
 
 
 def _extrair_paragrafos(soup: BeautifulSoup) -> list[str]:
-    """
-    Extrai parágrafos do conteúdo principal, descartando menus/footer/etc.
-    Cada item é o texto de um <p>, <li>, <h2>, <h3>, ou <h4>.
-    """
     for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
         tag.decompose()
-
     main = soup.find("main") or soup.find("article") or soup.body
     if main is None:
         return []
-
     paragrafos = []
     for el in main.find_all(["h1", "h2", "h3", "h4", "p", "li"]):
         txt = el.get_text(" ", strip=True)
@@ -153,78 +148,73 @@ def _texto_completo(paragrafos: list[str]) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Detecção de relatório real (heurística rigorosa)
+# Detecção de relatório real
 # ---------------------------------------------------------------------------
 
-# Termos analíticos típicos de relatório real (no corpo, não em menus)
+# H2s típicos de relatório de ação
+_TERMOS_H2_ACAO = [
+    "análise fundamentalista", "vale a pena investir", "tese de investimento",
+]
+
+# Termos analíticos que indicam corpo de relatório real (FII ou ação)
 _TERMOS_ANALITICOS = [
-    "tese", "recomenda", "preço-alvo", "preço alvo", "target",
-    "drivers", "perspectiva", "resultado", "balanço", "guidance",
-    "ebitda", "margem", "lucro", "receita", "valuation",
-    "múltiplo", "p/l", "p/vp", "dividend yield", "fluxo de caixa",
-    "alavancagem", "covenants", "investidores", "trimestre",
-]
-
-# Indicadores de "página vazia" (cotação + disclaimer)
-_INDICADORES_VAZIO = [
-    "preço atual",
-    "preço abertura",
-    "preço mínimo",
-    "preço fechamento",
-    "preço máximo",
-    "risco (0",
-    "abra sua conta",
+    "tese", "recomend", "dividend yield", "dy", "p/vp", "vacância",
+    "portfólio", "lajes", "logístic", "recebível", "cri", "lci",
+    "gestão", "emissor", "inadimplência", "spread", "ipca", "cdi",
+    "resultado", "rendimento", "distribuição", "cota", "patrimônio",
+    "ebitda", "margem", "lucro", "receita", "guidance", "valuation",
 ]
 
 
-def _e_paragrafo_narrativo(texto: str) -> bool:
-    """
-    Parágrafo "narrativo" é um texto longo (>= 150 chars) que parece
-    prosa, não label/cabeçalho. Heurística: tem ponto final ou vírgula
-    e proporção razoável de espaços (não é uma URL ou string técnica).
-    """
-    if len(texto) < 150:
-        return False
-    if texto.count(" ") < 15:
-        return False
-    if texto.count(".") + texto.count(",") + texto.count(";") < 2:
-        return False
-    return True
+def _contar_termos_analiticos(texto: str) -> int:
+    t = texto.lower()
+    return sum(1 for termo in _TERMOS_ANALITICOS if termo in t)
 
 
-def _tem_relatorio(soup) -> bool:
-    """
-    Relatório real precisa ter:
-    1. <h2> "Análise Fundamentalista" / "Vale a pena investir" / similar
-    2. Pelo menos 2 parágrafos narrativos (>=200 chars cada com pontuação)
-    """
-    # Marcador estrutural
-    h2_analitico = any(
-        any(termo in h2.get_text(" ", strip=True).lower()
-            for termo in ["análise fundamentalista", "vale a pena investir",
-                          "tese de investimento"])
-        for h2 in soup.find_all("h2")
-    )
-    if not h2_analitico:
-        return False
-
-    # Conteúdo narrativo substantivo
-    paragrafos = _extrair_paragrafos(soup)
-    narrativos = [
+def _paragrafos_narrativos(paragrafos: list[str]) -> list[str]:
+    return [
         p for p in paragrafos
-        if len(p) >= 200
-        and p.count(" ") >= 25
-        and (p.count(".") + p.count(",")) >= 3
+        if len(p) >= 150
+        and p.count(" ") >= 15
+        and (p.count(".") + p.count(",")) >= 2
     ]
-    return len(narrativos) >= 2CLEAR
+
+
+def _tem_relatorio(soup: BeautifulSoup, tipo_ativo: str = "acao") -> bool:
+    """
+    Ações: exige H2 analítico + 2 parágrafos narrativos.
+    FIIs:  sem H2 padronizado — exige corpo narrativo + densidade de termos.
+    """
+    paragrafos = _extrair_paragrafos(soup)
+    narrativos = _paragrafos_narrativos(paragrafos)
+    texto_corpo = " ".join(paragrafos)
+
+    if tipo_ativo == "fii":
+        # Relatório avulso de FII: sem H2 fixo, mas precisa de conteúdo real
+        if len(narrativos) < 2:
+            return False
+        if _contar_termos_analiticos(texto_corpo) < 3:
+            return False
+        return True
+    else:
+        # Ações: marcador estrutural obrigatório
+        h2_analitico = any(
+            any(termo in h2.get_text(" ", strip=True).lower()
+                for termo in _TERMOS_H2_ACAO)
+            for h2 in soup.find_all("h2")
+        )
+        if not h2_analitico:
+            return False
+        return len(narrativos) >= 2
+
+
 # ---------------------------------------------------------------------------
 # Função principal
 # ---------------------------------------------------------------------------
 
 def extrair(alvo: AlvoXP) -> Optional[ConteudoXP]:
     """
-    Baixa e processa a página do XP. Retorna None se a página não
-    existir (404) ou não tiver conteúdo de relatório real.
+    Baixa e processa a página do XP. Retorna None se 404 ou sem relatório real.
     """
     html = fetch_html(alvo.url, fonte=FONTE)
     if not html:
@@ -234,7 +224,7 @@ def extrair(alvo: AlvoXP) -> Optional[ConteudoXP]:
     titulo = _extrair_titulo(soup)
     paragrafos = _extrair_paragrafos(soup)
 
-    if not _tem_relatorio(soup):
+    if not _tem_relatorio(soup, tipo_ativo=alvo.tipo_ativo):
         return None
 
     texto = _texto_completo(paragrafos)
@@ -249,3 +239,4 @@ def extrair(alvo: AlvoXP) -> Optional[ConteudoXP]:
         texto=texto,
         contexto_ativo=titulo or alvo.ticker_url,
     )
+"@ | Out-File -FilePath fontes\xp\extrair.py -Encoding utf8

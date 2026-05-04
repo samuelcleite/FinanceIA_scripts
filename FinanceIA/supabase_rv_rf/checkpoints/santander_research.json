@@ -1,0 +1,34 @@
+{
+  "Fundos-Imobiliarios": {
+    "_status": "ok",
+    "ts": "2026-05-01T20:35:45.748541",
+    "url": "https://investimentos.santander.com.br/materiais/relatorios/Fundos-Imobiliarios.pdf",
+    "ativos_gravados": 12,
+    "ativos_total": 12,
+    "falhas_upsert": null
+  },
+  "Carteira-Valor": {
+    "_status": "ok",
+    "ts": "2026-05-01T20:37:12.796075",
+    "url": "https://investimentos.santander.com.br/materiais/relatorios/Carteira-Valor.pdf",
+    "ativos_gravados": 5,
+    "ativos_total": 5,
+    "falhas_upsert": null
+  },
+  "Carteira-Dividendos": {
+    "_status": "ok",
+    "ts": "2026-05-01T20:38:56.720213",
+    "url": "https://investimentos.santander.com.br/materiais/relatorios/Carteira-Dividendos.pdf",
+    "ativos_gravados": 9,
+    "ativos_total": 9,
+    "falhas_upsert": null
+  },
+  "Small-Caps": {
+    "_status": "ok",
+    "ts": "2026-05-01T20:40:44.331590",
+    "url": "https://investimentos.santander.com.br/materiais/relatorios/Small-Caps.pdf",
+    "ativos_gravados": 9,
+    "ativos_total": 9,
+    "falhas_upsert": null
+  }
+}

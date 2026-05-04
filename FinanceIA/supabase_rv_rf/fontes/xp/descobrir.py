@@ -1,19 +1,20 @@
 """
 Descoberta de URLs do XP Research.
 
-Padrão da fonte:
-- Ações:  https://conteudos.xpi.com.br/acoes/{ticker_individual_lower}/
-- FIIs:   https://conteudos.xpi.com.br/fundos-imobiliarios/{ticker_lower}/
+Ações:  URL canônica por ticker → /acoes/{ticker}/
+FIIs:   crawl paginado de /fundos-imobiliarios/relatorios/ → URL mais
+        recente por ticker (extraído do slug via regex).
 
-Estratégia "1 alvo por raiz":
+Estratégia "1 alvo por raiz" (ações):
   Como o XP publica 1 relatório por empresa (não por classe de ação),
   geramos UM alvo por codigo_b3 raiz e tentamos os tickers individuais
   do array `tickers` em ordem (preferindo ON, depois PN, depois Units).
-  O primeiro que retornar conteúdo válido vence — os outros são ignorados.
 
-Isso elimina chamadas Claude redundantes (PETR3 e PETR4 antes faziam
-2 chamadas pra produzir o mesmo registro).
+Estratégia "mais recente por ticker" (FIIs):
+  O índice é cronológico desc. A primeira URL encontrada para cada ticker
+  no slug é a mais recente. Filtra pelo catálogo de FIIs.
 """
+import re
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -24,40 +25,40 @@ from core.http import fetch_html
 
 
 BASE_ACOES = "https://conteudos.xpi.com.br/acoes/{ticker}/"
-BASE_FIIS = "https://conteudos.xpi.com.br/fundos-imobiliarios/{ticker}/"
-
 INDICE_ACOES = "https://conteudos.xpi.com.br/acoes/"
-INDICE_FIIS = "https://conteudos.xpi.com.br/fundos-imobiliarios/"
+INDICE_FIIS_P1 = "https://conteudos.xpi.com.br/fundos-imobiliarios/relatorios/"
+INDICE_FIIS_PN = "https://conteudos.xpi.com.br/fundos-imobiliarios/relatorios/page/{}/"
+MAX_PAGINAS_FIIS = 60
 
 FONTE = "xp_research"
+
+# Ticker FII: 4 letras + 1-2 dígitos
+_RE_TICKER_FII = re.compile(r"\b([A-Z]{4}[0-9]{1,2})\b")
+
+# Slugs de relatórios genéricos (sem ticker específico) — ignorar
+_PREFIXOS_IGNORAR = (
+    "top-fundos", "carteira-", "fiis-na-semana", "radar-",
+    "one-pager", "mapa-de-conteudos", "calendario-de-dividendos",
+    "superclassicos", "estrategia-", "mercado-livre",
+)
 
 
 @dataclass
 class AlvoXP:
-    codigo_b3: str                  # raiz (PETR, B3SA) — chave do registro
-    ticker_url: str                 # ticker que está sendo tentado agora
+    codigo_b3: str
+    ticker_url: str
     tipo_ativo: str                 # "acao" | "fii"
     url: str
     no_catalogo: bool
-    tickers_alternativos: list[str] = field(default_factory=list)  # fallback
+    tickers_alternativos: list[str] = field(default_factory=list)
 
 
-def _url_para(ticker_url: str, tipo: str) -> str:
-    base = BASE_ACOES if tipo == "acao" else BASE_FIIS
-    return base.format(ticker=ticker_url.lower())
-
+# ---------------------------------------------------------------------------
+# Ações
+# ---------------------------------------------------------------------------
 
 def _ordenar_tickers(tickers: list[str]) -> list[str]:
-    """
-    Ordena tickers individuais para escolher o "principal" da empresa.
-    Prioridade:
-      1. ON (sufixo 3) — geralmente mais negociado
-      2. PN (sufixo 4)
-      3. Units (sufixo 11)
-      4. Demais (5, 6, etc.)
-    """
     def chave(tk: str) -> tuple:
-        # Extrai sufixo numérico
         i = 0
         while i < len(tk) and tk[i].isalpha():
             i += 1
@@ -68,64 +69,15 @@ def _ordenar_tickers(tickers: list[str]) -> list[str]:
             n = 99
         ordem = {3: 0, 4: 1, 11: 2}.get(n, 9)
         return (ordem, n, tk)
-
     return sorted(tickers, key=chave)
 
 
-def descobrir_do_catalogo() -> list[AlvoXP]:
-    """
-    Monta UM candidato por codigo_b3 raiz.
-
-    Para cada raiz, escolhe o ticker "principal" (ON > PN > Units) como
-    URL primária, e guarda os outros como `tickers_alternativos` para o
-    extractor tentar como fallback se o primeiro não tiver conteúdo.
-    """
-    alvos: list[AlvoXP] = []
-
-    for acao in carregar_acoes():
-        raiz = acao["codigo_b3"]
-        tickers = acao.get("tickers") or [raiz]
-        ordenados = _ordenar_tickers(tickers) if tickers else [raiz]
-
-        principal = ordenados[0]
-        alternativos = ordenados[1:]
-
-        alvos.append(AlvoXP(
-            codigo_b3=raiz,
-            ticker_url=principal,
-            tipo_ativo="acao",
-            url=_url_para(principal, "acao"),
-            no_catalogo=True,
-            tickers_alternativos=alternativos,
-        ))
-
-    for fii in carregar_fiis():
-        raiz = fii["codigo_b3"]
-        tickers = fii.get("tickers") or [raiz]
-        # FII normalmente tem só um ticker
-        principal = tickers[0]
-        alternativos = tickers[1:]
-
-        alvos.append(AlvoXP(
-            codigo_b3=raiz,
-            ticker_url=principal,
-            tipo_ativo="fii",
-            url=_url_para(principal, "fii"),
-            no_catalogo=True,
-            tickers_alternativos=alternativos,
-        ))
-
-    return alvos
-
-
-def _extrair_tickers_indice(html: str, padrao_caminho: str) -> set[str]:
-    """Extrai tickers individuais (com sufixo) das páginas índice."""
+def _extrair_tickers_indice_acoes(html: str) -> set[str]:
     soup = BeautifulSoup(html, "lxml")
     tickers: set[str] = set()
-
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        if padrao_caminho not in href:
+        if "/acoes/" not in href:
             continue
         parts = [p for p in href.strip("/").split("/") if p]
         if not parts:
@@ -135,66 +87,156 @@ def _extrair_tickers_indice(html: str, padrao_caminho: str) -> set[str]:
             i = 0
             while i < len(cand) and cand[i].isalpha():
                 i += 1
-            letras = cand[:i]
-            digitos = cand[i:]
+            letras, digitos = cand[:i], cand[i:]
             if 3 <= len(letras) <= 5 and 1 <= len(digitos) <= 2 and digitos.isdigit():
                 tickers.add(cand)
-
     return tickers
 
 
-def descobrir_do_indice() -> dict[str, set[str]]:
-    """Crawl tolerante das páginas índice. Falhas geram aviso, não erro."""
-    out = {"acao": set(), "fii": set()}
+def _alvos_acoes() -> list[AlvoXP]:
+    alvos = []
+    for acao in carregar_acoes():
+        raiz = acao["codigo_b3"]
+        tickers = acao.get("tickers") or [raiz]
+        ordenados = _ordenar_tickers(tickers) if tickers else [raiz]
+        principal = ordenados[0]
+        alternativos = ordenados[1:]
+        alvos.append(AlvoXP(
+            codigo_b3=raiz,
+            ticker_url=principal,
+            tipo_ativo="acao",
+            url=BASE_ACOES.format(ticker=principal.lower()),
+            no_catalogo=True,
+            tickers_alternativos=alternativos,
+        ))
+    return alvos
 
-    try:
-        html_acoes = fetch_html(INDICE_ACOES, fonte=FONTE)
-        if html_acoes:
-            out["acao"] = _extrair_tickers_indice(html_acoes, "/acoes/")
-    except Exception as e:
-        print(f"[descobrir.xp] aviso: índice de ações indisponível ({e})")
 
-    try:
-        html_fiis = fetch_html(INDICE_FIIS, fonte=FONTE)
-        if html_fiis:
-            out["fii"] = _extrair_tickers_indice(html_fiis, "/fundos-imobiliarios/")
-    except Exception as e:
-        print(f"[descobrir.xp] aviso: índice de FIIs indisponível ({e})")
+# ---------------------------------------------------------------------------
+# FIIs — crawl do índice de relatórios
+# ---------------------------------------------------------------------------
 
-    return out
+def _slug_e_generico(slug: str) -> bool:
+    return any(slug.startswith(p) for p in _PREFIXOS_IGNORAR)
+
+
+def _tickers_do_slug(slug: str) -> list[str]:
+    slug_upper = slug.upper().replace("-", " ")
+    return _RE_TICKER_FII.findall(slug_upper)
+
+
+def _links_de_pagina(html: str) -> list[str]:
+    soup = BeautifulSoup(html, "html.parser")
+    base = "https://conteudos.xpi.com.br/fundos-imobiliarios/relatorios/"
+    links = []
+    seen = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "/fundos-imobiliarios/relatorios/" not in href:
+            continue
+        slug = href.rstrip("/").split("/")[-1]
+        if len(slug) < 5:          # âncora ou diretório raiz
+            continue
+        if href not in seen:
+            seen.add(href)
+            links.append(href)
+    return links
+
+
+def _alvos_fiis() -> list[AlvoXP]:
+    # Monta conjunto de tickers do catálogo
+    catalogo: set[str] = set()
+    for fii in carregar_fiis():
+        for tk in (fii.get("tickers") or [fii["codigo_b3"]]):
+            catalogo.add(tk.upper())
+
+    print(f"[descobrir.fiis] {len(catalogo)} tickers no catálogo")
+
+    mais_recente: dict[str, str] = {}  # ticker -> url
+
+    for pagina in range(1, MAX_PAGINAS_FIIS + 1):
+        url_pag = INDICE_FIIS_P1 if pagina == 1 else INDICE_FIIS_PN.format(pagina)
+        html = fetch_html(url_pag, fonte=FONTE, use_cache=False)
+        if not html:
+            print(f"[descobrir.fiis] página {pagina}: None — encerrando")
+            break
+
+        links = _links_de_pagina(html)
+        if not links:
+            print(f"[descobrir.fiis] página {pagina}: sem links — encerrando")
+            break
+
+        novos = 0
+        for href in links:
+            slug = href.rstrip("/").split("/")[-1]
+            if _slug_e_generico(slug):
+                continue
+            for tk in _tickers_do_slug(slug):
+                if tk not in mais_recente:
+                    mais_recente[tk] = href
+                    novos += 1
+
+        print(f"[descobrir.fiis] página {pagina}: {len(links)} links, {novos} tickers novos")
+
+    print(f"[descobrir.fiis] total tickers no índice: {len(mais_recente)}")
+
+    alvos = []
+    for tk, url in sorted(mais_recente.items()):
+        alvos.append(AlvoXP(
+            codigo_b3=tk,
+            ticker_url=tk,
+            tipo_ativo="fii",
+            url=url,
+            no_catalogo=(tk in catalogo),
+        ))
+
+    em_cat = sum(1 for a in alvos if a.no_catalogo)
+    print(f"[descobrir.fiis] {em_cat} no catálogo, {len(alvos)-em_cat} fora")
+    return alvos
+
+
+# ---------------------------------------------------------------------------
+# Interface pública
+# ---------------------------------------------------------------------------
+
+def descobrir_do_catalogo() -> list[AlvoXP]:
+    """Ações + FIIs do catálogo."""
+    return _alvos_acoes() + [a for a in _alvos_fiis() if a.no_catalogo]
 
 
 def descobrir_todos() -> tuple[list[AlvoXP], list[AlvoXP]]:
     """
-    Combina catálogo + descoberta de índice.
-
-    Retorna:
-      (alvos_para_processar, novos_descobertos_fora_do_catalogo)
-
-    "Novos" são tickers individuais cobertos pelo XP que não estão em
-    nenhum array `tickers` do catálogo — ficam pra revisão manual.
+    Retorna (alvos_catalogo, novos_fora_catalogo).
+    Compatível com run_xp.py.
     """
-    alvos_cat = descobrir_do_catalogo()
+    acoes = _alvos_acoes()
 
-    # Conjunto de TODOS os tickers individuais cobertos pelo catálogo
-    tickers_cat: set[str] = set()
-    for a in alvos_cat:
-        tickers_cat.add(a.ticker_url.upper())
+    # Crawl do índice uma única vez
+    todos_fiis = _alvos_fiis()
+    fiis_cat = [a for a in todos_fiis if a.no_catalogo]
+    fiis_novos = [a for a in todos_fiis if not a.no_catalogo]
+
+    # "Novos" de ações (crawl do índice de ações — mantém comportamento original)
+    tickers_cat_acoes: set[str] = set()
+    for a in acoes:
+        tickers_cat_acoes.add(a.ticker_url.upper())
         for alt in a.tickers_alternativos:
-            tickers_cat.add(alt.upper())
+            tickers_cat_acoes.add(alt.upper())
 
-    descobertos = descobrir_do_indice()
+    novos_acoes: list[AlvoXP] = []
+    try:
+        html_acoes = fetch_html(INDICE_ACOES, fonte=FONTE)
+        if html_acoes:
+            for tk in _extrair_tickers_indice_acoes(html_acoes):
+                if tk not in tickers_cat_acoes:
+                    novos_acoes.append(AlvoXP(
+                        codigo_b3=tk, ticker_url=tk, tipo_ativo="acao",
+                        url=BASE_ACOES.format(ticker=tk.lower()),
+                        no_catalogo=False,
+                    ))
+    except Exception as e:
+        print(f"[descobrir] aviso: índice de ações indisponível ({e})")
 
-    novos: list[AlvoXP] = []
-    for tipo, tickers in descobertos.items():
-        for tk in tickers:
-            if tk not in tickers_cat:
-                novos.append(AlvoXP(
-                    codigo_b3=tk,            # sem raiz conhecida
-                    ticker_url=tk,
-                    tipo_ativo=tipo,
-                    url=_url_para(tk, tipo),
-                    no_catalogo=False,
-                ))
-
+    alvos_cat = acoes + fiis_cat
+    novos = novos_acoes + fiis_novos
     return alvos_cat, novos
